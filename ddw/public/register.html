@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+	<head>
+		<title>用户注册</title>
+		<meta charset="utf-8"/>
+		<style>
+		  *{margin:0;padding:0}
+			body{
+			  width:100%px;
+				height:690px;
+				background:#ddd;
+			}
+		  #back{
+			  width:960px;height:73px;
+				background:#fff;
+				margin:0 auto;
+				padding:5px;
+				border-bottom:3px solid #e00;
+			}
+			#back .title a{
+			  color:#000;text-decoration:none;
+				font-size:15px;float:right;
+			}
+			#back .title{
+			  margin-right:15px;
+			}
+			.login img{
+			  width:171px;height:73px;
+				float:left;
+			}
+			.js{
+			  margin-top:17px;
+				margin-left:70%;
+			}
+			.js p{
+			  font-size:15px;
+			  color:#fff;
+			}
+			.js p a{
+			  text-decoration:none;
+			}
+			#body{
+			  width:950px;height:574px;
+				background:#fff;
+				margin:30px auto;
+			}
+			#body .title{
+			  width:930px;height:75px;
+				background:#fff;
+				margin:0px 10px;
+				box-sizing:border-box;
+				border-bottom:1px solid #DDDDDD;
+			}
+			#body .title>a{
+			  width:137px;height:47px;
+				text-align:center;
+				text-decoration:none;
+				position:relative;
+				display:inline-block;
+				border:1px solid #ddd;
+				border-bottom:none;
+				font-size:16px;
+				background:#fff;
+				left:20px;
+				margin-top:27px;
+				margin-left:6px;
+				line-height:47px;
+			}
+			#body .title>span{
+			  float:right;
+				font-size:12px;
+				line-height:24px;
+				margin-top:40px;
+				margin-right:15px;
+			}
+			.first{
+			  margin-right:15px;
+				text-decoration:none;
+			}
+			.help{
+			  text-decoration:none;
+			}
+			.font{
+			  font-size:14px;
+				padding:23px 10px 30px 150px;
+				color:#646464;
+				text-align:right;
+			}
+			#uname,#upwd,#cupwd{
+			  height:18px;width:312px;
+			  margin-right:10px;
+				border:1px solid #e6e6e6;
+				line-height:18px;	
+				float:left;
+				outline:0 none;
+				padding:9px 10px;
+			}
+			#code{
+			  width:182px;height:18px;
+				border:1px solid #e6e6e6;
+				margin-right:5px;
+				padding:9px 10px;
+			}
+			#body table{
+			  margin-top:50px;
+			}
+			#xieyi{
+			  font-size:12px;
+			}
+			#btn{
+			  width:178px;height:44px;
+				background:#ff2832;
+				text-decoration:none;
+				display:block;
+				border-radius:30px;
+				text-align:center;
+				line-height:44px;
+				color:#fff;
+				margin-top:30px;
+			}
+		</style>
+	</head>
+	<body>
+	  <div id="back">
+		  <table></table>
+			<div class="title">
+			  <a href="#">&nbsp;帮助</a>
+				<a href="#">&nbsp;企业销售&nbsp;|</a>
+				<a href="#">&nbsp;兜兜APP&nbsp;|</a>
+				<a href="#">&nbsp;礼物卡&nbsp;|</a>
+				<a href="#">&nbsp;兜兜界面&nbsp;|</a>
+				<a href="#">&nbsp;兜兜订单&nbsp;|</a>
+				<a href="#">购物车&nbsp;|</a>
+			</div>
+			<div class="login">
+			  <img src="../image/login.png" alt="兜兜网">
+			</div>
+			<div class="js">
+			  <p>欢迎来到，兜兜网&nbsp;<a href="">&nbsp;登陆&nbsp;</a><a href="">&nbsp;免费注册</a></p>
+			</div>
+		</div>
+		<div id="body">
+		  <div class="title">
+			  <a class="a" href="#">新用户注册</a>
+				<span>
+				  <a class="first" href="">兜兜首页</a>
+				  <a class="help" href="">注册帮忙</a>
+				</span>
+				<div id="text">
+				  <table width="100%" cellspacing="0" cellpadding="0" border=0>
+				  	<tr>
+				  		<td class="font">手机号码</td>
+				  		<td>
+							  <input id="uname" type="text" placeholder="请输入手机号">
+							</td>
+				  	</tr>
+				  	<tr>
+				  		<td class="font">登陆密码</td>
+				  		<td>
+							  <input id="upwd" type="password" placeholder="请输入密码">
+							</td>
+				  	</tr>
+				  	<tr>
+				  		<td class="font">确认密码</td>
+				  		<td>
+							  <input id="cupwd" type="text" placeholder="请再次输入密码">
+							</td>
+				  	</tr>
+				  	<tr>
+				  		<td class="font">验证码</td>
+				  		<td>
+							  <input id="code" placeholder="请输入验证码" type="text">
+							</td>
+						</tr>
+				  	<tr>
+				  		<td></td>
+				  		<td id="xieyi">
+							  <input type="checkbox">我已阅读同意
+							  <a href="#">《兜兜交易条款》</a>
+							</td>
+				  	</tr>
+				  	<tr>
+						  <td></td>
+				  		<td>
+							  <a id="btn" href="#">立即注册</a>
+							</td>
+				  	</tr>
+				  </table>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

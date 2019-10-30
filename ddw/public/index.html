@@ -1,0 +1,3122 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/comm.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+        .my_border-bottom{border-bottom: 3px solid #4e555b;}
+        .my_hd_bg1{background-image: url(../image/hdjx/201907301506413180.png); height: 100%;}
+        .my_hd_bg2{background-image: url(../image/hdjx/2019073015084791695.png); height: 100%;}
+        .my_hd_bg3{background-image: url(../image/hdjx/2019073015100427183.png); height: 100%;}
+        .my_hd_bg4{background-image: url(../image/hdjx/2019073015110941378.png); height: 100%;}
+        .t_l{display: block;width: 100%;text-align: center;padding-top: 24px;font-weight: bold;
+        font-size: 23px;color: #ff2a00;text-decoration: none;}
+        .my_hd_img1{width: 150px;height: 150px;overflow: hidden;border-radius: 8px;margin-left: 60px;}
+        .my_hd_tg{line-height: 16px;border-radius: 3px;font-size: 12px;padding-left: 2px;padding-right: 2px;}
+        .my_hd_price1{font-size: 22px;color: #ff2a00;}
+        .my_hd_yprice{text-decoration: line-through;}
+        .my_hd_footer{display: inline-block;width: 18px;height: 18px;position:relative;background-image: url("../image/hdjx/more-1564392920.png");left:200px;bottom: 10px;}
+        .my_ms_clock{font-size: 22px;color: #ff2a00;vertical-align:middle;}
+        .my_vtl{vertical-align: middle;font-size:20px;}
+        .my_ms_hover:hover{border-top: 3px solid #ff2a00;color: #ff2a00;}
+        .my_ms_w{width:150px;height: 150px;margin: 12px 25px 0 25px;}
+        .my_ms_boder{border-left: 1px solid #dee2e6;border-right: 1px solid #dee2e6;}
+        .my_ms_prs{height:8px;width:100%;border-radius: 15px;margin-left: 1.5rem;}
+        .my_ms_num{width: 76px;height: 20px;line-height: 20px;text-align: center;z-index:40;color: white;background-color: #ff2a00;position: absolute;border-radius: 15px;top:155px;left: 62px;opacity:0.8;}
+        .my_ms_name{overflow:hidden; font-size:14px;height:22px;margin: 5px auto 0 auto;}
+        .my_ms_price1{font-size:18px;color: #ff2a00;}
+        .my_li{background-image:url("../image/ms/li.png");width:1.3rem;height:1.3rem;}
+        .my_li2{background-image:url("../image/ms/li2.png");width:1.3rem;height:1.3rem;}
+        .my_ul_wh{width:100px;}
+        .my_li_hover1:hover{background-image:url("../image/ms/li.png");}
+        .my_li_hover2:hover{background-image:url("../image/ms/li.png");}
+        .my_d-block{display:block;}
+        .my_d-block2{display:none;}
+        .tabs{list-style:none;padding: 0;display:inline-block;}
+        .tabs2{list-style:none;padding: 0;display:inline-block;margin-left:18px;}
+        .tabs a{
+            text-decoration: none;
+            color: #4e555b;
+            background:#f5f5f5;
+            padding: 6px 12px;
+            display:inline-block;
+            border: 1px solid #000;
+            border-bottom: 0px;
+        }
+        .tabs2 a{ 
+            text-decoration:none;
+            color: #4e555b;
+            background:#f5f5f5;
+            padding: 6px 32px;
+            display:inline-block;
+            border: 0.5px solid #e6e6e6;
+            border-bottom: 0px;}
+        .tabs a{
+            border-right: 0px;
+        }
+        .tabs2 li{
+            border-right: 0px;
+        }
+        .tabs li:last-child a{
+            border-right: 1px solid #000;
+        }
+        .tabs2 li:last-child a{
+            border-right: 0.5px solid #e6e6e6;
+        }
+        .tabs>li>span{
+            text-decoration:none;
+			color:#000;
+			padding:5px 2px 2px 2px;
+			display:inline-block;
+            font-size:20px;
+            font-weight:bold;
+        }
+        .tabs>li>span:hover{
+            color:#ff2a00;
+        }
+        .tabs>li>.span1{
+            padding:16px 229px 15px 2px;
+			display:inline-block;
+        }
+        .tabs>li{
+            float: left;
+            border-bottom:2px solid #000;
+        }
+        .tabs2>li{
+            float: left;
+            border-bottom:0.5px solid #e6e6e6;
+        }
+        .tabs>.active{
+            border: 2px solid #000;
+            border-bottom: 0;
+        }
+        .tabs2>.active{
+            border-bottom: 0;
+        }
+        .my_img_bg1{background-image: url("../image/tuijian/9001320099482736.jpg");width: 238px;height: 445px;}
+        .my_img_bg2{background-image: url("../image/tuijian/loucengdatu-1569205707.jpg");width: 238px;height: 445px;}
+        .my_img_bg ul li a{
+            float: left;
+            width: 78px;
+            height: 28px;
+            line-height: 28px;
+            padding-left: 16px;
+            overflow: hidden;
+            font-size: 12px;
+            color: #4e555b;
+        }
+        .my_tuijian1{
+            display:block;
+            margin-bottom: 10px;
+            }
+        .my_tuijian2{
+            display:none;
+            margin-bottom: 10px;
+            }
+        .my_img_bg ul li a:hover{
+            color:#ff2a00;
+        }
+        .my_absolute{
+            position:absolute;
+            top:333px;
+        }
+        .tj_lun-width{
+            width: 335px;
+            display: inline-block;
+            }
+        .active a{
+            background: #fff;
+            }
+        .my_bang{
+            width:289.5px;
+            height:454px;
+            border:1px solid #e6e6e6;
+            float: right;
+            border-top:0;
+            margin-right:0.5px;
+            margin-top:-7px;
+            }
+        .my_bang ul{
+            margin:7px;
+            padding:0;
+            display: block;         
+        }
+        .my_bang ul li{
+            width: 100%;
+            height:35px;
+            border-bottom:1px solid #e5e5e5;
+        display:list-item;
+        line-height: 32px;
+        vertical-align: top;color:#666;
+        float: left;
+        }
+        .my_bang ul li span{
+            float: left;
+            padding-left:15px;
+            overflow: hidden;
+            color: #999;
+        }
+        .my_bang ul li p{
+            
+            margin-left:15px; 
+            float: left;
+            width: 140px;
+            height: 32px;
+            line-height:32px;
+            overflow: hidden;
+            font-size:10px;
+             
+        }
+        .my_bang ul li p a{
+            color: #666;
+        }
+        .my_bang ul .li_two{width:278px;height:132px;clear: both;vertical-align: top;}
+        .my_bang ul .li_two .span_two{font-weight: bold;}
+        .my_bang ul .li_two .a_two{width: 90px;height:90px;overflow: hidden;float: left;margin: 15px 15px 0;}
+        .my_bang ul .li_two .a_two .img_two{
+            width: 90px;
+            height: 90px;
+        }
+        .my_bang ul .li_two .p_two{
+            width: 130px;
+            height: 100px;
+            margin: 15px 0 0 -1px;
+            width:125px;
+            line-height:32px;           
+            float:right;
+            overflow: hidden;
+        }
+        div ul .li_first{display:block;}             
+        div ul .li_two{display:none;}        
+        div ul .li_first_first{display:none;}
+        div ul .li_two_first{display:block;}
+        .my_bang2{display: none;}
+        div .my_tj_head{
+            height: 34px;
+            color:#ff2832;
+            font: bold 20px "Microsoft YaHei";
+            border-bottom:2px solid #ff3228;
+            padding-left:5px;
+            clear: both;
+            margin-top: 5px;
+        }
+        div .my_tab_c{
+            border: 1px solid #e6e6e6;
+            width: 1198px;
+            margin: 10px auto 0;
+            overflow: hidden;
+            padding: 10px 0 15px;
+        }
+        .my_tab_c ul{
+            padding-left:5px;
+            width:1188px;
+           
+        }
+        .my_tab_c ul li{
+            float: left;
+            width: 190px;
+            height:258px; 
+            margin:0 3px;
+            padding:4px 3px 7px;
+            border:1px solid #fff; 
+        }
+        .my_tab_c ul li .pic{
+            position: relative;
+            display: block;
+            width: 190px;
+            height: 190px;
+            overflow:hidden;
+            margin:0 auto;
+            text-decoration: none;
+            color: #666
+        }
+        .my_tab_c ul li .pic img{
+            width:185px;
+            height:190px;
+        }
+        .my_tab_c .name{width:190px;
+            height: 32px;
+            line-height:16px;
+            padding:8px 0 0;
+            margin-bottom:5px;
+            overflow:hidden;
+            }
+        a{
+            text-decoration: none;
+            color: #666;
+        }
+        .my_tab_c .price {
+            font: 18px Arial;
+            color: #ff2832;
+            position: relative;
+        }
+        .my_tab_c .price .ebookprice_n {
+            position: absolute;
+            right: 5px;
+            bottom: 2px;
+            font: 12px Arial;
+            padding: 4px 0 0 0;
+            color: #787878;
+        }
+        #indexreco .li1:hover{
+            box-shadow: 0px 0px 8px #ddd;
+        }
+        #indexreco .li2:hover{
+            box-shadow: 0px 0px 8px #ddd;
+        }
+        #indexreco .li3:hover{
+            box-shadow: 0px 0px 8px #ddd;
+        }
+        #indexreco .li4:hover{
+            box-shadow: 0px 0px 8px #ddd;
+        }
+        #indexreco .li5:hover{
+            box-shadow: 0px 0px 8px #ddd;
+        }
+        #indexreco .li6:hover{
+            box-shadow: 0px 0px 8px #ddd;
+        }
+        #indexreco .li7:hover{
+            box-shadow: 0px 0px 8px #ddd;
+        }
+        #indexreco .li8:hover{
+            box-shadow: 0px 0px 8px #ddd;
+        }
+        #indexreco .li9:hover{
+            box-shadow: 0px 0px 8px #ddd;
+        }
+        #indexreco .li10:hover{
+            box-shadow: 0px 0px 8px #ddd;
+        }
+        #indexreco .li11:hover{
+            box-shadow: 0px 0px 8px #ddd;
+        }
+        #indexreco .li12:hover{
+            box-shadow: 0px 0px 8px #ddd;
+        }
+        .db_footer{
+            border-top:2px solid #ff2832;
+            margin-top:15px;
+            margin-bottom:15px; 
+            background-color:#fff;
+            clear:both; 
+        }
+        .footer_pic_new{
+            background-color: #fafafa;
+            border-bottom:1px solid #ebebeb;
+            width: 100%;
+            min-width:960px;
+        }
+        .footer_pic_new .footer_pic_new_inner{
+            width:940px;
+            margin:0 auto; 
+            height:79px;
+            padding:5px 30px 5px 30px;
+        }
+        .footer_pic_new .footer_pic_new_inner .footer_pic01{
+            border-left-width: 0;
+        }
+        .footer_pic_new .footer_pic_new_inner a{
+            display: block;
+            height: 52px;
+            width:187px;
+            float:left;
+            padding:7px 0px 7px 48px;
+            
+       
+        }
+        a {
+            text-decoration: none;
+            color: #666;
+        }
+        .footer_pic_new .footer_pic_new_inner a span{
+            text-indent:-9999px;
+            display: block;
+            width: 187px;
+            height: 52px;
+            background:url("http://img60.ddimg.cn/upload_img/00660/home/footer_bg.png") 0 0 no-repeat;
+            font-size:0;
+            line-height:0;
+            cursor: pointer; 
+        }
+        .footer_pic_new .footer_pic_new_inner .footer_pic02 span{
+            background-position:0 -52px;
+        }
+        .footer_pic_new .footer_pic_new_inner .footer_pic03 span{
+            background-position:0 -103px;  
+        }
+        .footer_pic_new .footer_pic_new_inner .footer_pic04 span{
+            background-position:0 -156px;
+ 
+        }
+        .footer_pic_new .footer_pic_new_inner .footer_pic02{margin-left: 40px;}
+        .footer_pic_new .footer_pic_new_inner .footer_pic03{margin-left: 40px;}
+        .footer_pic_new .footer_pic_new_inner .footer_pic04{margin-left: 40px;}
+    </style>
+</head>
+<body>
+<!--引入头部-->
+<header>
+    <iframe class="w-100 my_header_h" src="header.html" frameborder="0" scrolling="no"></iframe>
+</header>
+<!--页面中间部分-->
+<div class="my_header_bg">
+    <!--商品分类菜单-->
+    <div class="bg-light w-100 d-flex">
+        <div class="center_width left_bg">
+            <!--商品分类焦点-->
+            <div class="left_width pl-3 pt-2 border-top xl_1">
+                <a class="text-light" style="text-decoration:none"; href="#">图书、</a>
+                <a class="text-light" style="text-decoration:none"; href="#">童书</a>
+            </div>
+            <!--鼠标获取焦点显示界面-->
+            <div class="menu_center p-4 xl_11 m--1 ">
+                <div class="justify-content-between">
+                    <span class="text-danger">教育</span>
+                    <a class="text-danger ml-4 text-small" href="#">|中小学教辅|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|考试|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|大中专教材|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|外语|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|工具书|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|教师用书|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|新概念|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|中小学阅读|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|英语四级|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|......</a><br/>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">文艺</span>
+                    <a class="text-danger ml-4 mt-2 text-small" href="#">|小说|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|文学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|传记|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|青春文学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|动漫/幽默|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|艺术|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|摄影|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|偶像明星|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|涂色/填色|</a>
+                    <a class="text-muted ml-1  text-small" href="#">|......</a><br/>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">童书</span>
+                    <a class="text-muted ml-4 mt-2 text-small" href="#">|0-2岁|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|3-6岁|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|7-10岁|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|11-14岁|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|绘本|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|中国儿童文学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|外国儿童文学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|百科|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|婴幼启蒙|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|益智游戏|</a>
+                    <a class="text-muted ml-1  text-small" href="#">|......</a><br/>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">人文社科</span>
+                    <a class="text-muted ml-4 mt-2 text-small" href="#">|哲学宗教|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|历史|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|政治军事|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|文化|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|社会科学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|心理学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|古籍|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|法律|</a>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">励志</span>
+                    <a class="text-danger ml-4 mt-2 text-small" href="#">|励志/成功|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|心灵修养|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|职场|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|人生哲学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|人际交往|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|口才/演讲/辩论|</a>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">生活</span>
+                    <a class="text-danger ml-4 mt-2 text-small" href="#">|两性|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|孕期|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|育儿|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|亲子家教|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|保健|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|运动|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|休闲|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|旅游|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|美食|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|美妆|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|手工DIY|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|家庭家居|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|风水占卜|</a>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">经管</span>
+                    <a class="text-danger ml-4 mt-2 text-small" href="#">|经济|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|管理|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">投资理财|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|股票|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|金融|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|市场销售|</a>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">科技</span>
+                    <a class="text-muted ml-4 mt-2 text-small" href="#">|科普读物|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|计算机/网络|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|医学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|工业技术|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|建筑|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|自然科学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|农业/林业|</a>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">兜兜出版</span>
+                    <a class="text-muted ml-4 mt-2 text-small" href="#">|小说|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|文学|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|社科|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|外语|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|教辅|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|艺术|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|童书|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|青春文学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|生活|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|励志|</a>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">进口书</span>
+                    <a class="text-muted ml-4 mt-2 text-small" href="#">|英文图书|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|港台图书|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|日文图书|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|法文图书|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|韩文图书|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|其他语种|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|杂志|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|英文原版小说|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|进口艺术画册|</a>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">音像</span>
+                    <a class="text-muted ml-4 mt-2 text-small" href="#">|影视|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|软件|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|游戏|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|教育音像|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|华语流行|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|儿童音乐|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|动画片|</a>
+                </div>
+            </div>
+            <!--商品分类焦点-->
+            <div class="left_width pl-3 pt-1 xl_2">
+                <a class="text-light"style="text-decoration:none"; href="#">电子书、</a>
+                <a class="text-light ml-1"style="text-decoration:none"; href="#">网络文学</a>
+            </div>
+            <!--鼠标获取焦点显示界面-->
+            <div class="menu_center p-4 xl_12 m--2 ">
+                <div class="justify-content-between">
+                    <span class="text-danger">教育</span>
+                    <a class="text-danger ml-4 text-small" href="#">|中小学教辅|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|考试|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|大中专教材|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|外语|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|工具书|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|教师用书|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|新概念|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|中小学阅读|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|英语四级|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|......</a><br/>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">文艺</span>
+                    <a class="text-danger ml-4 mt-2 text-small" href="#">|小说|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|文学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|传记|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|青春文学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|动漫/幽默|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|艺术|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|摄影|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|偶像明星|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|涂色/填色|</a>
+                    <a class="text-muted ml-1  text-small" href="#">|......</a><br/>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">童书</span>
+                    <a class="text-muted ml-4 mt-2 text-small" href="#">|0-2岁|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|3-6岁|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|7-10岁|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|11-14岁|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|绘本|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|中国儿童文学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|外国儿童文学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|百科|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|婴幼启蒙|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|益智游戏|</a>
+                    <a class="text-muted ml-1  text-small" href="#">|......</a><br/>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">人文社科</span>
+                    <a class="text-muted ml-4 mt-2 text-small" href="#">|哲学宗教|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|历史|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|政治军事|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|文化|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|社会科学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|心理学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|古籍|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|法律|</a>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">励志</span>
+                    <a class="text-danger ml-4 mt-2 text-small" href="#">|励志/成功|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|心灵修养|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|职场|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|人生哲学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|人际交往|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|口才/演讲/辩论|</a>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">生活</span>
+                    <a class="text-danger ml-4 mt-2 text-small" href="#">|两性|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|孕期|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|育儿|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|亲子家教|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|保健|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|运动|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|休闲|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|旅游|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|美食|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|美妆|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|手工DIY|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|家庭家居|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|风水占卜|</a>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">经管</span>
+                    <a class="text-danger ml-4 mt-2 text-small" href="#">|经济|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|管理|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">投资理财|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|股票|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|金融|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|市场销售|</a>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">科技</span>
+                    <a class="text-muted ml-4 mt-2 text-small" href="#">|科普读物|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|计算机/网络|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|医学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|工业技术|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|建筑|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|自然科学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|农业/林业|</a>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">兜兜出版</span>
+                    <a class="text-muted ml-4 mt-2 text-small" href="#">|小说|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|文学|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|社科|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|外语|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|教辅|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|艺术|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|童书|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|青春文学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|生活|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|励志|</a>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">进口书</span>
+                    <a class="text-muted ml-4 mt-2 text-small" href="#">|英文图书|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|港台图书|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|日文图书|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|法文图书|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|韩文图书|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|其他语种|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|杂志|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|英文原版小说|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|进口艺术画册|</a>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">音像</span>
+                    <a class="text-muted ml-4 mt-2 text-small" href="#">|影视|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|软件|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|游戏|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|教育音像|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|华语流行|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|儿童音乐|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|动画片|</a>
+                </div>
+            </div>
+            <!--商品分类焦点-->
+            <div class="left_width pl-3 pt-1 xl_3">
+                <a class="text-light"style="text-decoration:none"; href="#">创意文具、</a>
+                <a class="text-light ml-1"style="text-decoration:none"; href="#">拍卖</a>
+            </div>
+            <!--鼠标获取焦点显示界面-->
+            <div class="menu_center p-4 xl_13 m--3 ">
+                <div class="justify-content-between">
+                    <span class="text-danger">教育</span>
+                    <a class="text-danger ml-4 text-small" href="#">|中小学教辅|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|考试|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|大中专教材|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|外语|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|工具书|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|教师用书|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|新概念|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|中小学阅读|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|英语四级|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|......</a><br/>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">文艺</span>
+                    <a class="text-danger ml-4 mt-2 text-small" href="#">|小说|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|文学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|传记|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|青春文学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|动漫/幽默|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|艺术|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|摄影|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|偶像明星|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|涂色/填色|</a>
+                    <a class="text-muted ml-1  text-small" href="#">|......</a><br/>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">童书</span>
+                    <a class="text-muted ml-4 mt-2 text-small" href="#">|0-2岁|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|3-6岁|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|7-10岁|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|11-14岁|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|绘本|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|中国儿童文学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|外国儿童文学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|百科|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|婴幼启蒙|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|益智游戏|</a>
+                    <a class="text-muted ml-1  text-small" href="#">|......</a><br/>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">人文社科</span>
+                    <a class="text-muted ml-4 mt-2 text-small" href="#">|哲学宗教|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|历史|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|政治军事|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|文化|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|社会科学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|心理学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|古籍|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|法律|</a>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">励志</span>
+                    <a class="text-danger ml-4 mt-2 text-small" href="#">|励志/成功|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|心灵修养|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|职场|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|人生哲学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|人际交往|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|口才/演讲/辩论|</a>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">生活</span>
+                    <a class="text-danger ml-4 mt-2 text-small" href="#">|两性|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|孕期|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|育儿|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|亲子家教|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|保健|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|运动|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|休闲|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|旅游|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|美食|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|美妆|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|手工DIY|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|家庭家居|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|风水占卜|</a>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">经管</span>
+                    <a class="text-danger ml-4 mt-2 text-small" href="#">|经济|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|管理|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">投资理财|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|股票|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|金融|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|市场销售|</a>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">科技</span>
+                    <a class="text-muted ml-4 mt-2 text-small" href="#">|科普读物|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|计算机/网络|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|医学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|工业技术|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|建筑|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|自然科学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|农业/林业|</a>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">兜兜出版</span>
+                    <a class="text-muted ml-4 mt-2 text-small" href="#">|小说|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|文学|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|社科|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|外语|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|教辅|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|艺术|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|童书|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|青春文学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|生活|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|励志|</a>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">进口书</span>
+                    <a class="text-muted ml-4 mt-2 text-small" href="#">|英文图书|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|港台图书|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|日文图书|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|法文图书|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|韩文图书|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|其他语种|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|杂志|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|英文原版小说|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|进口艺术画册|</a>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">音像</span>
+                    <a class="text-muted ml-4 mt-2 text-small" href="#">|影视|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|软件|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|游戏|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|教育音像|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|华语流行|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|儿童音乐|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|动画片|</a>
+                </div>
+            </div>
+            <!--商品分类焦点-->
+            <div class="left_width pl-3 pt-1 xl_4">
+                <a class="text-light"style="text-decoration:none"; href="#">服饰、</a>
+                <a class="text-light ml-1"style="text-decoration:none"; href="#">内衣</a>
+            </div>
+            <!--鼠标获取焦点显示界面-->
+            <div class="menu_center p-4 xl_14 m--4 ">
+                <div class="justify-content-between">
+                    <span class="text-danger">教育</span>
+                    <a class="text-danger ml-4 text-small" href="#">|中小学教辅|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|考试|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|大中专教材|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|外语|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|工具书|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|教师用书|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|新概念|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|中小学阅读|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|英语四级|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|......</a><br/>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">文艺</span>
+                    <a class="text-danger ml-4 mt-2 text-small" href="#">|小说|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|文学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|传记|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|青春文学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|动漫/幽默|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|艺术|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|摄影|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|偶像明星|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|涂色/填色|</a>
+                    <a class="text-muted ml-1  text-small" href="#">|......</a><br/>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">童书</span>
+                    <a class="text-muted ml-4 mt-2 text-small" href="#">|0-2岁|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|3-6岁|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|7-10岁|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|11-14岁|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|绘本|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|中国儿童文学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|外国儿童文学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|百科|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|婴幼启蒙|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|益智游戏|</a>
+                    <a class="text-muted ml-1  text-small" href="#">|......</a><br/>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">人文社科</span>
+                    <a class="text-muted ml-4 mt-2 text-small" href="#">|哲学宗教|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|历史|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|政治军事|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|文化|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|社会科学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|心理学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|古籍|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|法律|</a>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">励志</span>
+                    <a class="text-danger ml-4 mt-2 text-small" href="#">|励志/成功|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|心灵修养|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|职场|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|人生哲学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|人际交往|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|口才/演讲/辩论|</a>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">生活</span>
+                    <a class="text-danger ml-4 mt-2 text-small" href="#">|两性|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|孕期|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|育儿|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|亲子家教|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|保健|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|运动|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|休闲|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|旅游|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|美食|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|美妆|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|手工DIY|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|家庭家居|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|风水占卜|</a>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">经管</span>
+                    <a class="text-danger ml-4 mt-2 text-small" href="#">|经济|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|管理|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">投资理财|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|股票|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|金融|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|市场销售|</a>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">科技</span>
+                    <a class="text-muted ml-4 mt-2 text-small" href="#">|科普读物|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|计算机/网络|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|医学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|工业技术|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|建筑|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|自然科学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|农业/林业|</a>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">兜兜出版</span>
+                    <a class="text-muted ml-4 mt-2 text-small" href="#">|小说|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|文学|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|社科|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|外语|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|教辅|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|艺术|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|童书|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|青春文学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|生活|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|励志|</a>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">进口书</span>
+                    <a class="text-muted ml-4 mt-2 text-small" href="#">|英文图书|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|港台图书|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|日文图书|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|法文图书|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|韩文图书|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|其他语种|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|杂志|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|英文原版小说|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|进口艺术画册|</a>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">音像</span>
+                    <a class="text-muted ml-4 mt-2 text-small" href="#">|影视|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|软件|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|游戏|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|教育音像|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|华语流行|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|儿童音乐|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|动画片|</a>
+                </div>
+            </div>
+            <!--商品分类焦点-->
+            <div class="left_width pl-3 pt-1 xl_5">
+                <a class="text-light"style="text-decoration:none"; href="#">鞋靴、</a>
+                <a class="text-light ml-1"style="text-decoration:none"; href="#">箱包</a>
+            </div>
+            <!--鼠标获取焦点显示界面-->
+            <div class="menu_center p-4 xl_15 m--5">
+                <div class="justify-content-between">
+                    <span class="text-danger">教育</span>
+                    <a class="text-danger ml-4 text-small" href="#">|中小学教辅|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|考试|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|大中专教材|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|外语|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|工具书|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|教师用书|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|新概念|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|中小学阅读|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|英语四级|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|......</a><br/>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">文艺</span>
+                    <a class="text-danger ml-4 mt-2 text-small" href="#">|小说|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|文学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|传记|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|青春文学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|动漫/幽默|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|艺术|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|摄影|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|偶像明星|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|涂色/填色|</a>
+                    <a class="text-muted ml-1  text-small" href="#">|......</a><br/>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">童书</span>
+                    <a class="text-muted ml-4 mt-2 text-small" href="#">|0-2岁|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|3-6岁|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|7-10岁|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|11-14岁|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|绘本|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|中国儿童文学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|外国儿童文学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|百科|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|婴幼启蒙|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|益智游戏|</a>
+                    <a class="text-muted ml-1  text-small" href="#">|......</a><br/>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">人文社科</span>
+                    <a class="text-muted ml-4 mt-2 text-small" href="#">|哲学宗教|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|历史|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|政治军事|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|文化|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|社会科学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|心理学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|古籍|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|法律|</a>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">励志</span>
+                    <a class="text-danger ml-4 mt-2 text-small" href="#">|励志/成功|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|心灵修养|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|职场|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|人生哲学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|人际交往|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|口才/演讲/辩论|</a>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">生活</span>
+                    <a class="text-danger ml-4 mt-2 text-small" href="#">|两性|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|孕期|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|育儿|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|亲子家教|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|保健|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|运动|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|休闲|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|旅游|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|美食|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|美妆|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|手工DIY|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|家庭家居|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|风水占卜|</a>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">经管</span>
+                    <a class="text-danger ml-4 mt-2 text-small" href="#">|经济|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|管理|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">投资理财|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|股票|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|金融|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|市场销售|</a>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">科技</span>
+                    <a class="text-muted ml-4 mt-2 text-small" href="#">|科普读物|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|计算机/网络|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|医学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|工业技术|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|建筑|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|自然科学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|农业/林业|</a>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">兜兜出版</span>
+                    <a class="text-muted ml-4 mt-2 text-small" href="#">|小说|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|文学|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|社科|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|外语|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|教辅|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|艺术|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|童书|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|青春文学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|生活|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|励志|</a>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">进口书</span>
+                    <a class="text-muted ml-4 mt-2 text-small" href="#">|英文图书|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|港台图书|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|日文图书|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|法文图书|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|韩文图书|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|其他语种|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|杂志|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|英文原版小说|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|进口艺术画册|</a>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">音像</span>
+                    <a class="text-muted ml-4 mt-2 text-small" href="#">|影视|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|软件|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|游戏|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|教育音像|</a>
+                    <a class="text-danger ml-1 mt-2 text-small" href="#">|华语流行|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|儿童音乐|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|动画片|</a>
+                </div>
+            </div>
+            <!--商品分类焦点-->
+            <div class="left_width pl-3 pt-1 xl_6">
+                <a class="text-light"style="text-decoration:none"; href="#">运动户外</a>
+            </div>
+            <!--鼠标获取焦点显示界面-->
+            <div class="menu_center p-4 xl_16 m--6">
+                <div class="justify-content-between">
+                    <span class="text-danger">教育</span>
+                    <a class="text-danger ml-4 text-small" href="#">|中小学教辅|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|考试|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|大中专教材|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|外语|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|工具书|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|教师用书|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|新概念|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|中小学阅读|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|英语四级|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|......</a><br/>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">文艺</span>
+                    <a class="text-danger ml-4 mt-2 text-small" href="#">|小说|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|文学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|传记|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|青春文学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|动漫/幽默|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|艺术|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|摄影|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|偶像明星|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|涂色/填色|</a>
+                    <a class="text-muted ml-1  text-small" href="#">|......</a><br/>
+                </div>
+            </div>
+            <!--商品分类焦点-->
+            <div class="left_width pl-3 pt-1 xl_7">
+                <a class="text-light"style="text-decoration:none"; href="#">孕、</a>
+                <a class="text-light ml-1"style="text-decoration:none"; href="#">童、</a>
+                <a class="text-light ml-1"style="text-decoration:none"; href="#">婴</a>
+            </div>
+            <!--鼠标获取焦点显示界面-->
+            <div class="menu_center p-4 xl_17 m--7">
+                <div class="justify-content-between">
+                    <span class="text-danger">教育</span>
+                    <a class="text-danger ml-4 text-small" href="#">|中小学教辅|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|考试|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|大中专教材|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|外语|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|工具书|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|教师用书|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|新概念|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|中小学阅读|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|英语四级|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|......</a><br/>
+                </div>
+                <div class="mt-3">
+                    <span class="text-danger mt-2">文艺</span>
+                    <a class="text-danger ml-4 mt-2 text-small" href="#">|小说|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|文学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|传记|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|青春文学|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|动漫/幽默|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|艺术|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|摄影|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|偶像明星|</a>
+                    <a class="text-muted ml-1 mt-2 text-small" href="#">|涂色/填色|</a>
+                    <a class="text-muted ml-1  text-small" href="#">|......</a><br/>
+                </div>
+            </div>
+            <!--商品分类焦点-->
+            <div class="left_width pl-3 pt-1 xl_8">
+                <a class="text-light"style="text-decoration:none"; href="#">家居、</a>
+                <a class="text-light ml-1"style="text-decoration:none"; href="#">家纺、</a>
+                <a class="text-light ml-1"style="text-decoration:none"; href="#">汽车</a>
+            </div>
+            <!--鼠标获取焦点显示界面-->
+            <div class="menu_center p-4 xl_18 m--8">
+                <div class="justify-content-between">
+                    <span class="text-danger">教育</span>
+                    <a class="text-danger ml-4 text-small" href="#">|中小学教辅|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|考试|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|大中专教材|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|外语|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|工具书|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|教师用书|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|新概念|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|中小学阅读|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|英语四级|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|......</a><br/>
+                </div>
+            </div>
+            <!--商品分类焦点-->
+            <div class="left_width pl-3 pt-1 xl_9">
+                <a class="text-light"style="text-decoration:none"; href="#">家具、</a>
+                <a class="text-light ml-1"style="text-decoration:none"; href="#">家装、</a>
+                <a class="text-light ml-1"style="text-decoration:none"; href="#">康体</a>
+            </div>
+            <!--鼠标获取焦点显示界面-->
+            <div class="menu_center p-4 xl_19 m--9">
+                <div class="justify-content-between">
+                    <span class="text-danger">教育</span>
+                    <a class="text-danger ml-4 text-small" href="#">|中小学教辅|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|考试|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|大中专教材|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|外语|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|工具书|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|教师用书|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|新概念|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|中小学阅读|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|英语四级|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|......</a><br/>
+                </div>
+            </div>
+            <!--商品分类焦点-->
+            <div class="left_width pl-3 pt-1 xl_001">
+                <a class="text-light"style="text-decoration:none"; href="#">美妆、</a>
+                <a class="text-light ml-1"style="text-decoration:none"; href="#">护理、</a>
+                <a class="text-light ml-1"style="text-decoration:none"; href="#">成人</a>
+            </div>
+            <!--鼠标获取焦点显示界面-->
+            <div class="menu_center p-4 xl_0001 m--10">
+                <div class="justify-content-between">
+                    <span class="text-danger">教育</span>
+                    <a class="text-danger ml-4 text-small" href="#">|中小学教辅|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|考试|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|大中专教材|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|外语|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|工具书|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|教师用书|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|新概念|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|中小学阅读|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|英语四级|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|......</a><br/>
+                </div>
+            </div>
+            <!--商品分类焦点-->
+            <div class=" left_width pl-3 pt-1 xl_002">
+                <a class="text-light"style="text-decoration:none"; href="#">食品、</a>
+                <a class="text-light ml-1"style="text-decoration:none"; href="#">茶酒、</a>
+                <a class="text-light ml-1"style="text-decoration:none"; href="#">生鲜</a>
+            </div>
+            <!--鼠标获取焦点显示界面-->
+            <div class="menu_center p-4 xl_0002 m--11">
+                <div class="justify-content-between">
+                    <span class="text-danger">教育</span>
+                    <a class="text-danger ml-4 text-small" href="#">|中小学教辅|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|考试|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|大中专教材|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|外语|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|工具书|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|教师用书|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|新概念|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|中小学阅读|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|英语四级|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|......</a><br/>
+                </div>
+            </div>
+            <!--商品分类焦点-->
+            <div class=" left_width pl-3 pt-1 xl_003">
+                <a class="text-light"style="text-decoration:none"; href="#">腕表、</a>
+                <a class="text-light ml-1"style="text-decoration:none"; href="#">珠宝、</a>
+                <a class="text-light ml-1"style="text-decoration:none"; href="#">眼镜</a>
+            </div>
+            <!--鼠标获取焦点显示界面-->
+            <div class="menu_center p-4 xl_0003 m--12">
+                <div class="justify-content-between">
+                    <span class="text-danger">教育</span>
+                    <a class="text-danger ml-4 text-small" href="#">|中小学教辅|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|考试|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|大中专教材|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|外语|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|工具书|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|教师用书|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|新概念|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|中小学阅读|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|英语四级|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|......</a><br/>
+                </div>
+            </div>
+            <!--商品分类焦点-->
+            <div class=" left_width pl-3 pt-1 xl_004">
+                <a class="text-light"style="text-decoration:none"; href="#">手机、</a>
+                <a class="text-light ml-1"style="text-decoration:none"; href="#">数码、</a>
+            </div>
+            <!--鼠标获取焦点显示界面-->
+            <div class="menu_center p-4 xl_0004 m--13">
+                <div class="justify-content-between">
+                    <span class="text-danger">教育</span>
+                    <a class="text-danger ml-4 text-small" href="#">|中小学教辅|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|考试|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|大中专教材|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|外语|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|工具书|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|教师用书|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|新概念|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|中小学阅读|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|英语四级|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|......</a><br/>
+                </div>
+            </div>
+            <!--商品分类焦点-->
+            <div class="left_width pl-3 pt-1 xl_005">
+                <a class="text-light"style="text-decoration:none"; href="#">电脑办公</a>
+            </div>
+            <!--鼠标获取焦点显示界面-->
+            <div class="menu_center p-4 xl_0005 m--14">
+                <div class="justify-content-between">
+                    <span class="text-danger">教育</span>
+                    <a class="text-danger ml-4 text-small" href="#">|中小学教辅|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|考试|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|大中专教材|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|外语|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|工具书|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|教师用书|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|新概念|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|中小学阅读|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|英语四级|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|......</a><br/>
+                </div>
+            </div>
+            <!--商品分类焦点-->
+            <div class=" left_width pl-3 pt-1 xl_006">
+                <a class="text-light"style="text-decoration:none"; href="#">家用电器</a>
+            </div>
+            <!--鼠标获取焦点显示界面-->
+            <div class="menu_center p-4 xl_0006 m--15">
+                <div class="justify-content-between">
+                    <span class="text-danger">教育</span>
+                    <a class="text-danger ml-4 text-small" href="#">|中小学教辅|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|考试|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|大中专教材|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|外语|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|工具书|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|教师用书|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|新概念|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|中小学阅读|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|英语四级|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|......</a><br/>
+                </div>
+            </div>
+            <!--商品分类焦点-->
+            <div class=" left_width pl-3 pt-1 xl_007">
+                <a class="text-light"style="text-decoration:none"; href="#">礼品卡、</a>
+                <a class="text-light ml-1"style="text-decoration:none"; href="#">生活服务</a>
+            </div>
+            <!--鼠标获取焦点显示界面-->
+            <div class="menu_center p-4 xl_0007 m--16">
+                <div class="justify-content-between">
+                    <span class="text-danger">教育</span>
+                    <a class="text-danger ml-4 text-small" href="#">|中小学教辅|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|考试|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|大中专教材|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|外语|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|工具书|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|教师用书|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|新概念|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|中小学阅读|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|英语四级|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|......</a><br/>
+                </div>
+            </div>
+            <!--商品分类焦点-->
+            <div class=" left_width pl-3 pt-1 xl_008 pb-2 border-bottom">
+                <a class="text-light"style="text-decoration:none"; href="#">礼品卡、</a>
+                <a class="text-light ml-1"style="text-decoration:none"; href="#">生活服务</a>
+            </div>
+            <!--鼠标获取焦点显示界面-->
+            <div class="menu_center p-4 xl_0008 m--17">
+                <div class="justify-content-between">
+                    <span class="text-danger">教育</span>
+                    <a class="text-danger ml-4 text-small" href="#">|中小学教辅|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|考试|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|大中专教材|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|外语|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|工具书|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|教师用书|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|新概念|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|中小学阅读|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|英语四级|</a>
+                    <a class="text-muted ml-1 text-small" href="#">|......</a><br/>
+                </div>
+            </div>
+        </div>
+        <!--中间轮播图部分-->
+        <div class="center_lun_width lb_x">
+            <!--中间上部分轮播图-->
+            <div class="carousel" data-ride="carousel" id="dome">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="#"><img class="w-100 " src="../image/index/2019082216465154898.jpg" alt=""/></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#"><img class="w-100" src="../image/index/2019082216441682037.jpg" alt=""/></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#"><img class="w-100" src="../image/index/2019082310585920843.jpg" alt=""/></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#"><img class="w-100" src="../image/index/2019082314380464894.jpg" alt=""/></a>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" data-slide="prev" href="#dome">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" data-slide="next" href="#dome">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+                <ul class="carousel-indicators">
+                    <li data-slide-to="0" data-target="#dome">1</li>
+                    <li data-slide-to="1" data-target="#dome">2</li>
+                    <li data-slide-to="2" data-target="#dome">3</li>
+                    <li data-slide-to="3" data-target="#dome">4</li>
+                </ul>
+            </div>
+            <!--中间下部分轮播图-->
+            <div class="d-flex center_width">
+                <div class="carousel" data-ride="carousel" id="demo_two">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" >
+                            <a href="#"><img class="25 border" src="../image/index/201908211803027077.jpg" alt=""/></a><a href="#"><img class="w-25 border" src="../image/index/20190820154811243.jpg" alt=""/></a><a  href="#"><img class="w-25 border" src="../image/index/201908231746286539.jpg" alt=""/></a><a href="#"><img class="w-25 border" src="../image/index/2019082017531585488.jpg" alt=""/></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="#"><img class="w-25 border" src="../image/index/2019082116023451262.jpg" alt=""/></a><a href="#"><img class="w-25 border" src="../image/index/2019082219093590439.jpg" alt=""/></a><a href="#"><img class="w-25 border" src="../image/index/2019082316173916911.jpg" alt=""/></a><a href="#"><img class="w-25 border" src="../image/index/2019082317472693282.jpg" alt=""/></a>
+                        </div>
+                        <a class="carousel-control-prev" data-slide="prev" href="#demo_two">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" data-slide="next" href="#demo_two">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--右边img-->
+        <div class="right_width border-right">
+            <div>
+                <a href="#"><img class="w-100" src="../image/index/2019082216554449891.jpg" alt=""/></a>
+            </div>
+            <!--右边信息公告部分-->
+            <div class="nav">
+            <span class="w-50 m-0 text-center my_hover1 py-2 h6 d-inline-block bg_f0">信息公告</span>
+            <span class="w-50 m-0 text-center my_hover2 py-2 h6 float-right d-inline-block bg_f0">服务公告</span>
+            <ul class="hover1 right_width bg-white border-right pl-4 pt-2 mb-0">
+                <li><a class="font-small text-muted" href="#">精装童书现时0元领</a></li>
+                <li><a class="font-small text-muted" href="#">当当优品/威露士全场1件4折</a></li>
+                <li><a class="font-small text-muted" href="#">美特斯邦威超品日&nbsp;2件2.5折</a></li>
+                <li><a class="font-small text-muted" href="#">8.25图书季满100减50</a></li>
+                <li class="pb-3"><a class="font-small text-muted" href="#">童书49元任选5件</a></li>
+            </ul>
+            <ul class="hover2 pl-4 pt-2 mb-0 right_width bg-white border-right ">
+                <li><a class="font-small text-danger" href="#">关于谨慎诈骗的重要提示</a></li>
+                <li><a class="font-small text-muted" href="#">开学季大促期间关闭COD</a></li>
+                <li><a class="font-small text-muted" href="#">话费卡兑换兜兜礼品卡</a></li>
+                <li><a class="font-small text-muted" href="#">多种商品,礼品卡支付更优惠</a></li>
+                <li class="pb-3"><a class="font-small text-danger" href="#">关于假冒客服诈骗的声明</a></li>
+            </ul>
+        </div>
+            <!--右边下部分轮播图-->
+            <div class="right_width">
+                <div class="carousel" data-ride="carousel" id="demo_three">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="#"><img class="border border-left-0 img-fluid" src="../image/index/tab1-1566459246.jpg" alt=""/></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="#"><img class="border border-left-0 img-fluid" src="../image/index/tab202x119_0730-1564550695.jpg" alt=""/></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="#"><img class="border border-left-0 img-fluid" src="../image/index/qixianshengmiaoxiaojie2-1559267193.jpg" alt=""/></a>
+                        </div>
+                        <a class="carousel-control-prev prev" data-slide="prev" href="#demo_three">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next next" data-slide="next" href="#demo_three">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                        <ul class="carousel-indicators">
+                            <li data-slide-to="0" data-target="#demo_three">1</li>
+                            <li data-slide-to="1" data-target="#demo_three">2</li>
+                            <li data-slide-to="2" data-target="#demo_three">3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--活动精选部分-->
+    <div class="mt-4 my_border-bottom pb-2">
+        <img class="bg-white" src="../image/index/hdjx.png" alt="活动精选"/>
+    </div>
+    <!--添加活动图片-->
+    <div class="row mx-0 mt-3">
+        <div class="col-3">
+            <div class="my_hd_bg1">
+                <a href="" style="text-decoration:none";>
+                    <span class="t_l">拼团</span>
+                    <div>
+                        <div class="my_hd_img1 mt-1">
+                            <img class="w-100" src="../image/hdjx/25536535-1_h_0.jpg" alt=""/>
+                        </div>
+                        <div>
+                            <span class="text-muted d-block text-center mt-2 text-small">地图&nbsp;人文版(升级版)</span>
+                            <div class="w-50 m-auto">
+                                <span class="text-white bg-danger my_hd_tg">2人团</span>
+                            </div>
+                            <div class="w-50 m-auto pt-2">
+                                <span class="my_hd_price1">￥72.00</span>
+                                <span class="my_hd_tg text-muted my_hd_yprice">￥168.00</span>
+                            </div>
+                            <div class="my_hd_footer mt-3"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class=" col-3">
+            <div class="my_hd_bg2">
+                <a href="" style="text-decoration:none";>
+                    <span class="t_l">拼团</span>
+                    <div>
+                        <div class="my_hd_img1 mt-1">
+                            <img class="w-100" src="../image/hdjx/1514202614-1_h_1.jpg" alt=""/>
+                        </div>
+                        <div>
+                            <span class="text-muted d-block text-center mt-2 text-small">北京稻香村&nbsp;金秋有戏</span>
+                            <div class="w-50 m-auto">
+                                <span class="text-white bg-danger my_hd_tg">5人团</span>
+                            </div>
+                            <div class="w-50 m-auto pt-2">
+                                <span class="my_hd_price1">￥0.00</span>
+                                <span class="my_hd_tg text-muted my_hd_yprice">￥149.00</span>
+                            </div>
+                            <div class="my_hd_footer mt-3"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class=" col-3">
+            <div class="my_hd_bg3">
+                <a href="" style="text-decoration:none";>
+                    <span class="t_l">拼团</span>
+                    <div>
+                        <div class="my_hd_img1 mt-1">
+                            <img class="w-100" src="../image/hdjx/25315054-1_h_0.jpg" alt=""/>
+                        </div>
+                        <div>
+                            <span class="text-muted d-block text-center mt-2 text-small">斯凯瑞金色童书</span>
+                            <div class="w-50 m-auto">
+                                <span class="text-white bg-danger my_hd_tg">16人砍价成功</span>
+                            </div>
+                            <div class="w-50 m-auto pt-2">
+                                <span class="my_hd_price1">￥1.00</span>
+                                <span class="my_hd_tg text-muted my_hd_yprice">￥84.50</span>
+                            </div>
+                            <div class="my_hd_footer mt-3"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class=" col-3">
+            <div class="my_hd_bg4">
+                <a href="" style="text-decoration:none";>
+                    <span class="t_l">拼团</span>
+                    <div>
+                        <div class="my_hd_img1 mt-1">
+                            <img class="w-100" src="../image/hdjx/25536535-1_h_0.jpg" alt=""/>
+                        </div>
+                        <div>
+                            <span class="text-muted d-block text-center mt-2 text-small">汪曾祺散文精选集</span>
+                            <div class="w-50 m-auto">
+                                <span class="text-white bg-danger my_hd_tg">1人团</span>
+                            </div>
+                            <div class="w-50 m-auto pt-2">
+                                <span class="my_hd_price1">￥0.01</span>
+                                <span class="my_hd_tg text-muted my_hd_yprice">￥88.90</span>
+                            </div>
+                            <div class="my_hd_footer mt-3"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--秒杀活动专区头部-->
+    <div class="mt-4 my_border-bottom d-block">
+        <img class="bg-white" src="../image/ms/home_miaosha_title-1561107108.png" alt="秒杀"/>
+        <img class="ml-5" src="../image/ms/clock.png" alt=""/>
+        <div class="d-inline-block">
+            <span class="my_ms_clock">00:00:00</span>
+        </div>
+        <div class="d-inline-block ml-5 pl-5">
+        <div class="ml-5 d-inline-block my_ms_hover">
+            <span class="font-weight-bold my_vtl ">00:00场</span>
+        </div>
+        <div class="ml-5 d-inline-block my_ms_hover">
+            <span class="font-weight-bold my_vtl my_ms_hover">11:00场</span>
+        </div>
+        <div class="ml-5 d-inline-block my_ms_hover">
+            <span class="font-weight-bold my_vtl my_ms_hover">16:00场</span>
+        </div>
+        </div>        
+        <ul class="d-inline-block p-0 float-right my_ul_wh" style="list-style-type:none;">
+            <li>
+                <a class="my_li my_li_hover1 float-left" href="javascript:"></a>
+            </li>
+            <li>
+                <a class="my_li2 my_li_hover2 float-left" href="javascript:;"></a>
+            </li>
+        </ul>
+        <div class="d-inline-block float-right mr-5">
+            <span class="my_vtl">厂商周</span>
+         </div>
+    </div>
+    <!--把下面的活动专区img分为6份-->
+    <div class="row mx-0">
+        <!-- 第一部分 -->
+        <div class="col-2 px-0">
+            <div class="my_ms_boder border-bottom position-relative">
+                <div>
+                    <a href="#">
+                        <img class="my_ms_w" src="../image/ms/1198298148-1_l_5.jpg" alt="img1"/>
+                    </a>
+                </div>
+                <div class="w-75">
+                    <div class="my_ms_prs progress">
+                        <div class="progress-bar w-75 bg-danger"></div>
+                        <div class="my_ms_num">已秒杀75%</div>
+                    </div>
+                </div>
+                <div class="w-75 my_ms_name">
+                    <a class="text-muted" href="#">【限时包邮秒杀】鬼谷子+墨菲定律+人性的弱点+狼道+羊皮卷 受益一生的5本书正版书籍 为人处世书籍 畅销书</a>
+                </div>
+                <div class="ml-3">
+                    <span class="text-small text-danger">秒杀价:</span>
+                    <span class="my_ms_price1">￥72.00</span>
+                    <span class="text-small text-muted my_hd_yprice">￥168.00</span>
+                </div>
+            </div>
+            <div class="my_ms_boder border-bottom position-relative">
+                <div>
+                    <a href="#">
+                        <img class="my_ms_w" src="../image/ms/25584390-1_l_2.jpg" alt="img1"/>
+                    </a>
+                </div>
+                <div class="w-75">
+                    <div class="my_ms_prs progress">
+                        <div class="progress-bar w-75 bg-danger"></div>
+                        <div class="my_ms_num">已秒杀75%</div>
+                    </div>
+                </div>
+                <div class="w-75 my_ms_name">
+                    <a class="text-muted" href="#">【道德经——中华经典藏书（精装双色插图版</a>
+                </div>
+                <div class="ml-3">
+                    <span class="text-small text-danger">秒杀价:</span>
+                    <span class="my_ms_price1">￥15.90</span>
+                    <span class="text-small text-muted my_hd_yprice">￥34.80</span>
+                </div>
+            </div>
+        </div>
+        <!-- 第二部分 -->
+        <div class="col-2 px-0">
+            <div class="my_ms_boder border-bottom position-relative">
+                <div>
+                    <a href="#">
+                        <img class="my_ms_w" src="../image/ms/1325201189-1_l_1.jpg" alt="img1"/>
+                    </a>
+                </div>
+                <div class="w-75">
+                    <div class="my_ms_prs progress">
+                        <div class="progress-bar w-75 bg-danger"></div>
+                        <div class="my_ms_num">已秒杀75%</div>
+                    </div>
+                </div>
+                <div class="w-75 my_ms_name">
+                    <a class="text-muted" href="#">【限时秒杀包邮】  影响孩子一生的世界名著全套8册 儿童文学小王子 中小学生必读课外读物昆虫记 适合6-15岁阅读 一二三四五六年级儿童读物书籍</a>
+                </div>
+                <div class="ml-3">
+                    <span class="text-small text-danger">秒杀价:</span>
+                    <span class="my_ms_price1">￥24.60</span>
+                    <span class="text-small text-muted my_hd_yprice">￥29.80</span>
+                </div>
+            </div>
+            <div class="my_ms_boder border-bottom position-relative">
+                <div>
+                    <a href="#">
+                        <img class="my_ms_w" src="../image/ms/23928947-1_l_6.jpg" alt="img1"/>
+                    </a>
+                </div>
+                <div class="w-75">
+                    <div class="my_ms_prs progress">
+                        <div class="progress-bar w-75 bg-danger"></div>
+                        <div class="my_ms_num">已秒杀50%</div>
+                    </div>
+                </div>
+                <div class="w-75 my_ms_name">
+                    <a class="text-muted" href="#">科学大师经典“烧脑”必读系列：相对论 物种起源 自然史 通俗天文学 （全四册套装）</a>
+                </div>
+                <div class="ml-3">
+                    <span class="text-small text-danger">秒杀价:</span>
+                    <span class="my_ms_price1">￥39.80</span>
+                    <span class="text-small text-muted my_hd_yprice">￥70.9</span>
+                </div>
+            </div>
+        </div>
+        <!-- 第三部分 -->
+        <div class="col-2 px-0">
+            <div class="my_ms_boder border-bottom position-relative">
+                <div>
+                    <a href="#">
+                        <img class="my_ms_w" src="../image/ms/1535214762-1_l_1.jpg" alt="img1"/>
+                    </a>
+                </div>
+                <div class="w-75">
+                    <div class="my_ms_prs progress">
+                        <div class="progress-bar w-75 bg-danger"></div>
+                        <div class="my_ms_num">已秒杀75%</div>
+                    </div>
+                </div>
+                <div class="w-75 my_ms_name">
+                    <a class="text-muted" href="#">【今日必抢】慵懒风毛衣开衫女中长款2019春装新款韩版宽松很仙的针织外套春季</a>
+                </div>
+                <div class="ml-3">
+                    <span class="text-small text-danger">秒杀价:</span>
+                    <span class="my_ms_price1">￥59</span>
+                    <span class="text-small text-muted my_hd_yprice">￥189.00</span>
+                </div>
+            </div>
+            <div class="my_ms_boder border-bottom position-relative">
+                <div>
+                    <a href="#">
+                        <img class="my_ms_w" src="../image/ms/1356558916-1_l_17.jpg" alt="img1"/>
+                    </a>
+                </div>
+                <div class="w-75">
+                    <div class="my_ms_prs progress">
+                        <div class="progress-bar w-75 bg-danger"></div>
+                        <div class="my_ms_num">已秒杀75%</div>
+                    </div>
+                </div>
+                <div class="w-75 my_ms_name">
+                    <a class="text-muted" href="#">董卿 做一个有才情的女子+刚刚好的自己+你若不勇敢谁替你坚强会表达的女人董卿推荐的适合女生看的书籍 畅销书排行榜</a>
+                </div>
+                <div class="ml-3">
+                    <span class="text-small text-danger">秒杀价:</span>
+                    <span class="my_ms_price1">￥47.90</span>
+                    <span class="text-small text-muted my_hd_yprice">￥49</span>
+                </div>
+            </div>
+        </div>
+        <!-- 第四部分 -->
+        <div class="col-2 px-0">
+            <div class="my_ms_boder border-bottom position-relative">
+                <div>
+                    <a href="#">
+                        <img class="my_ms_w" src="../image/ms/1267954398-1_l_2.jpg" alt="img1"/>
+                    </a>
+                </div>
+                <div class="w-75">
+                    <div class="my_ms_prs progress">
+                        <div class="progress-bar w-75 bg-danger"></div>
+                        <div class="my_ms_num">已秒杀75%</div>
+                    </div>
+                </div>
+                <div class="w-75 my_ms_name">
+                    <a class="text-muted" href="#">法式轻奢！美到没朋友！新款优雅碎花连衣裙女V领气质收腰茶歇裙</a>
+                </div>
+                <div class="ml-3">
+                    <span class="text-small text-danger">秒杀价:</span>
+                    <span class="my_ms_price1">￥87.00</span>
+                    <span class="text-small text-muted my_hd_yprice">￥159.00</span>
+                </div>
+            </div>
+            <div class="my_ms_boder border-bottom position-relative">
+                <div>
+                    <a href="#">
+                        <img class="my_ms_w" src="../image/ms/1280744498-1_l_2.jpg" alt="img1"/>
+                    </a>
+                </div>
+                <div class="w-75">
+                    <div class="my_ms_prs progress">
+                        <div class="progress-bar w-75 bg-danger"></div>
+                        <div class="my_ms_num">已秒杀75%</div>
+                    </div>
+                </div>
+                <div class="w-75 my_ms_name">
+                    <a class="text-muted" href="#">【大放价！仅此一天！抢购价12.9元包邮！】儿童袜 女童天鹅绒彩色加档连裤袜2019春夏季韩版新款舞蹈袜时尚潮流修身中大童款袜子</a>
+                </div>
+                <div class="ml-3">
+                    <span class="text-small text-danger">秒杀价:</span>
+                    <span class="my_ms_price1">￥12.90</span>
+                    <span class="text-small text-muted my_hd_yprice">￥58.00</span>
+                </div>
+            </div>
+        </div>
+        <!-- 第五部分 -->
+        <div class="col-2 px-0">
+            <div class="my_ms_boder border-bottom position-relative">
+                <div>
+                    <a href="#">
+                        <img class="my_ms_w" src="../image/ms/1509168359-1_l_13.jpg" alt="img1"/>
+                    </a>
+                </div>
+                <div class="w-75">
+                    <div class="my_ms_prs progress">
+                        <div class="progress-bar w-75 bg-danger"></div>
+                        <div class="my_ms_num">已秒杀75%</div>
+                    </div>
+                </div>
+                <div class="w-75 my_ms_name">
+                    <a class="text-muted" href="#">【买2送厦航杯限今日】正山堂正山小种50g 元正茶业红茶花果蜜香型罐装武夷山散域境2019年新茶百年传承老字号</a>
+                </div>
+                <div class="ml-3">
+                    <span class="text-small text-danger">秒杀价:</span>
+                    <span class="my_ms_price1">￥19.90</span>
+                    <span class="text-small text-muted my_hd_yprice">￥29.90</span>
+                </div>
+            </div>
+            <div class="my_ms_boder border-bottom position-relative">
+                <div>
+                    <a href="#">
+                        <img class="my_ms_w" src="../image/ms/1517624564-1_l_1.jpg" alt="img1"/>
+                    </a>
+                </div>
+                <div class="w-75">
+                    <div class="my_ms_prs progress">
+                        <div class="progress-bar w-75 bg-danger"></div>
+                        <div class="my_ms_num">已秒杀75%</div>
+                    </div>
+                </div>
+                <div class="w-75 my_ms_name">
+                    <a class="text-muted" href="#">【限时一天！儿童彩虹条卫衣！抢购价36.9元包邮！】儿童卫衣 女童长袖卫衣2019秋款中大童装新款时尚洋气儿童彩虹条长袖棉印花T恤</a>
+                </div>
+                <div class="ml-3">
+                    <span class="text-small text-danger">秒杀价:</span>
+                    <span class="my_ms_price1">￥36.90</span>
+                    <span class="text-small text-muted my_hd_yprice">￥127.00</span>
+                </div>
+            </div>
+        </div>
+        <!--第六部分 默认显示部分-->
+        <div id="dpy1" class="col-2 px-0 my_d-block">
+            <ul class="p-0 border-right" style="list-style:none;">
+                <li class="border-bottom">
+                    <a href="#"><img class="w-100" src="../image/ms/2019090516332395554.jpg" alt="ms"></a>
+                </li>
+                <li class="border-bottom">
+                    <a href="#"><img class="w-100" src="../image/ms/2019090618140351074.jpg" alt="ms"></a>
+                </li>
+                <li class="border-bottom">
+                    <a href="#"><img class="w-100" src="../image/ms/2019091018272222188.jpg" alt="ms"></a>
+                </li>
+                <li class="border-bottom">
+                     <a href="#"><img class="w-100" src="../image/ms/2019091018215736656.jpg" alt="ms"></a>
+                </li>
+            </ul>
+        </div>
+        <!--第六部分 默认隐藏部分-->
+        <div id="dpy2" class="col-2 px-0 my_d-block2">
+                <ul class="p-0 border-right" style="list-style:none;">
+                    <li class="border-bottom">
+                        <a href="#"><img class="w-100" src="../image/ms/2019091018215736656.jpg" alt="ms"></a>
+                    </li>
+                    <li class="border-bottom">
+                        <a href="#"><img class="w-100" src="../image/ms/2019090618140351074.jpg" alt="ms"></a>
+                    </li>
+                    <li class="border-bottom">
+                        <a href="#"><img class="w-100" src="../image/ms/2019091018272222188.jpg" alt="ms"></a>
+                    </li>
+                    <li class="border-bottom">
+                         <a href="#"><img class="w-100" src="../image/ms/2019090516332395554.jpg" alt="ms"></a>
+                    </li>
+                </ul>
+            </div>
+    </div>
+    <!-- 图书/电子书/网络文学  部分样式-->
+    <div class="div1">
+        <ul class="tabs mb-0">
+            <li><span>图书</span>
+                <span>·</span>
+                <span>电子书</span>
+                <span>·</span>
+                <span>网络文学</span>
+            </li>
+            <li><span class="span1"></span></li>
+            <li class="active"><a data-toggle="tab" href="#">最新上架</a></li>
+            <li><a data-toggle="tab" href="#">独家畅品</a></li>
+            <li><a data-toggle="tab" href="#">重点推荐</a></li>
+            <li><a data-toggle="tab" href="#">电子书</a></li>
+            <li id="lastchild"><a data-toggle="tab" href="#">网络文学</a></li>
+            <ul class="tabs2">
+                <li class="active"><a id="bang1" data-toggle="tab" href="#">图书畅销榜</a></li>
+                <li><a id="bang2" data-toggle="tab" href="#">童书新书榜</a></li>
+            </ul>
+        </ul>       
+        <div class="border float-left my_tuijian1" >
+            <div class="my_img_bg my_img_bg1 position-relative border-right mr-0 float-left">
+                <ul class="bg-white float-left p-0 my_absolute" style="list-style:none;">
+                    <li class="float-left"><a  href="javascript:;">童书</a></li>
+                    <li class="float-left"><a  href="javascript:;">中小学教辅</a></li>
+                    <li class="float-left"><a  href="javascript:;">外语</a></li>
+                    <li class="float-left"><a  href="javascript:;">考试</a></li>
+                    <li class="float-left"><a  href="javascript:;">小说</a></li>
+                    <li class="float-left"><a  href="javascript:;">文学</a></li>
+                    <li class="float-left"><a  href="javascript:;">青春文学</a></li>
+                    <li class="float-left"><a  href="javascript:;">成功/励志</a></li>
+                    <li class="float-left"><a  href="javascript:;">管理</a></li>
+                    <li class="float-left"><a  href="javascript:;">历史</a></li>
+                    <li class="float-left"><a  href="javascript:;">亲子/家教</a></li>
+                    <li class="float-left"><a  href="javascript:;">全部分类&gt;</a></li>
+                </ul>
+            </div>
+            <div class="tj_lun-width float-left">
+                <div class="carousel border-right" data-ride="carousel" id="tj_dome">
+                    <div class="carousesl-inner">
+                        <div class="carousel-item active">
+                            <a href="#"><img class="w-100" src="../image/tuijian/335x220_0528-1559034109.jpg" alt=""></a>
+                        </div>
+                        <div class="carousel-item">
+                                <a href="#"><img class="w-100" src="../image/tuijian/loucengbanner_0829-1567161079.jpg" alt=""></a>
+                        </div>
+                        <a class="carousel-control-prev" data-slide="prev" href="#tj_dome"><span class="carousel-control-prev-icon"></span></a>
+                        <a class="carousel-control-next" data-slide="next" href="#tj_dome"><span class="carousel-control-next-icon"></span></a>
+                        <ul class="carousel-indicators">
+                            <li data-slide-to="0" data-target="#tj_dome">1</li>
+                            <li data-slide-to="1" data-target="#tj_dome">2</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-50 text-center float-left border-right">
+                        <img class="m-1" src="../image/tuijian/27904948-1_l_3.jpg" alt="">
+                        <p class="m-2">
+                            <a class="text-muted" style="font-size:12px;" href="javascript:;">熊镇2册礼盒套装</a>
+                        </p>
+                        <span class="m-0" style="color:#ff2a00;">￥68.20</span>
+                        <span class="text-muted my_hd_yprice" style="font-size:10px;">￥94.8</span>
+                    </div>
+                    <div class="w-50 text-center float-left border-right">
+                        <img class="m-1" src="../image/tuijian/27921309-1_l_3.jpg" alt="">
+                        <p class="m-2">
+                            <a class="text-muted" style="font-size:12px;" href="javascript:;">迈向财富自由之路</a>
+                        </p>
+                        <span class="m-0" style="color:#ff2a00;">￥68.20</span>
+                        <span class="text-muted my_hd_yprice" style="font-size:10px;">￥94.8</span>
+                    </div>
+                </div>    
+            </div>
+            <div class="float-left">
+                <div>
+                    <div class="w-50 text-center float-left border-right">
+                        <img class="m-1" src="../image/tuijian/27928355-1_l_7.jpg" alt="">
+                        <p class="m-2">
+                            <a class="text-muted" style="font-size:12px;" href="javascript:;">三毛传</a>
+                        </p>
+                        <span class="m-0" style="color:#ff2a00;">￥68.20</span>
+                        <span class="text-muted my_hd_yprice" style="font-size:10px;">￥94.8</span>
+                    </div>
+                    <div class="w-50 text-center float-left border-right">
+                        <img class="m-1" src="../image/tuijian/27906644-1_l_7.jpg" alt="">
+                        <p class="m-2">
+                            <a class="text-muted" style="font-size:12px;" href="javascript:;">熊镇2册礼盒套装</a>
+                        </p>
+                        <span class="m-0" style="color:#ff2a00;">￥68.20</span>
+                        <span class="text-muted my_hd_yprice" style="font-size:10px;">￥94.8</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-50 text-center float-left border-right border-top">
+                        <img class="m-1" src="../image/tuijian/27915737-1_l_3.jpg" alt="">
+                        <p class="m-2">
+                            <a class="text-muted" style="font-size:12px;" href="javascript:;">史记（文白对照本）</a>
+                        </p>
+                        <span class="m-0" style="color:#ff2a00;">￥68.20</span>
+                        <span class="text-muted my_hd_yprice" style="font-size:10px;">￥94.8</span>
+                    </div>
+                    <div class="w-50 text-center float-left border-right border-top">
+                        <img class="m-1" src="../image/tuijian/27907881-1_l_6.jpg" alt="">
+                        <p class="m-2">
+                            <a class="text-muted" style="font-size:12px;" href="javascript:;">世界博物馆奇妙之旅</a>
+                        </p>
+                        <span class="m-0" style="color:#ff2a00;">￥68.20</span>
+                        <span class="text-muted my_hd_yprice" style="font-size:10px;">￥94.8</span>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <div class="border float-left my_tuijian2">
+            <div class="my_img_bg my_img_bg2 position-relative border-right mr-0 float-left">
+                <ul class="bg-white float-left p-0 my_absolute" style="list-style:none;">
+                    <li class="float-left"><a  href="javascript:;">童书</a></li>
+                    <li class="float-left"><a  href="javascript:;">中小学教辅</a></li>
+                    <li class="float-left"><a  href="javascript:;">外语</a></li>
+                    <li class="float-left"><a  href="javascript:;">考试</a></li>
+                    <li class="float-left"><a  href="javascript:;">小说</a></li>
+                    <li class="float-left"><a  href="javascript:;">文学</a></li>
+                    <li class="float-left"><a  href="javascript:;">青春文学</a></li>
+                    <li class="float-left"><a  href="javascript:;">成功/励志</a></li>
+                    <li class="float-left"><a  href="javascript:;">管理</a></li>
+                    <li class="float-left"><a  href="javascript:;">历史</a></li>
+                    <li class="float-left"><a  href="javascript:;">亲子/家教</a></li>
+                    <li class="float-left"><a  href="javascript:;">全部分类&gt;</a></li>
+                </ul>
+            </div>
+            <div class="tj_lun-width float-left">
+                <div class="carousel border-right" data-ride="carousel" id="tj_dome2">
+                    <div class="carousesl-inner">
+                        <div class="carousel-item active">
+                            <a href="#"><img class="w-100" src="../image/tuijian/bannerdangshou0107-1546838986.jpg" alt=""></a>
+                        </div>
+                        <div class="carousel-item">
+                                <a href="#"><img class="w-100" src="../image/tuijian/banner3-6-1569205707.jpg" alt=""></a>
+                        </div>
+                        <a class="carousel-control-prev" data-slide="prev" href="#tj_dome2"><span class="carousel-control-prev-icon"></span></a>
+                        <a class="carousel-control-next" data-slide="next" href="#tj_dome2"><span class="carousel-control-next-icon"></span></a>
+                        <ul class="carousel-indicators">
+                            <li data-slide-to="0" data-target="#tj_dome2">1</li>
+                            <li data-slide-to="1" data-target="#tj_dome2">2</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-50 text-center float-left border-right">
+                        <img class="m-1" src="../image/tuijian/27904948-1_l_3.jpg" alt="">
+                        <p class="m-2">
+                            <a class="text-muted" style="font-size:12px;" href="javascript:;">熊镇2册礼盒套装</a>
+                        </p>
+                        <span class="m-0" style="color:#ff2a00;">￥68.20</span>
+                        <span class="text-muted my_hd_yprice" style="font-size:10px;">￥94.8</span>
+                    </div>
+                    <div class="w-50 text-center float-left border-right">
+                        <img class="m-1" src="../image/tuijian/27921309-1_l_3.jpg" alt="">
+                        <p class="m-2">
+                            <a class="text-muted" style="font-size:12px;" href="javascript:;">迈向财富自由之路</a>
+                        </p>
+                        <span class="m-0" style="color:#ff2a00;">￥68.20</span>
+                        <span class="text-muted my_hd_yprice" style="font-size:10px;">￥94.8</span>
+                    </div>
+                </div>    
+            </div>
+            <div class="float-left">
+                <div>
+                    <div class="w-50 text-center float-left border-right">
+                        <img class="m-1" src="../image/tuijian/27928355-1_l_7.jpg" alt="">
+                        <p class="m-2">
+                            <a class="text-muted" style="font-size:12px;" href="javascript:;">三毛传</a>
+                        </p>
+                        <span class="m-0" style="color:#ff2a00;">￥68.20</span>
+                        <span class="text-muted my_hd_yprice" style="font-size:10px;">￥94.8</span>
+                    </div>
+                    <div class="w-50 text-center float-left border-right">
+                        <img class="m-1" src="../image/tuijian/27906644-1_l_7.jpg" alt="">
+                        <p class="m-2">
+                            <a class="text-muted" style="font-size:12px;" href="javascript:;">熊镇2册礼盒套装</a>
+                        </p>
+                        <span class="m-0" style="color:#ff2a00;">￥68.20</span>
+                        <span class="text-muted my_hd_yprice" style="font-size:10px;">￥94.8</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-50 text-center float-left border-right border-top">
+                        <img class="m-1" src="../image/tuijian/27915737-1_l_3.jpg" alt="">
+                        <p class="m-2">
+                            <a class="text-muted" style="font-size:12px;" href="javascript:;">史记（文白对照本）</a>
+                        </p>
+                        <span class="m-0" style="color:#ff2a00;">￥68.20</span>
+                        <span class="text-muted my_hd_yprice" style="font-size:10px;">￥94.8</span>
+                    </div>
+                    <div class="w-50 text-center float-left border-right border-top">
+                        <img class="m-1" src="../image/tuijian/27893366-1_l_5.jpg" alt="">
+                        <p class="m-2">
+                            <a class="text-muted" style="font-size:12px;" href="javascript:;">快乐的力量</a>
+                        </p>
+                        <span class="m-0" style="color:#ff2a00;">￥68.20</span>
+                        <span class="text-muted my_hd_yprice" style="font-size:10px;">￥94.8</span>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <div class="my_bang">
+            <div class="my_bang1">
+                <ul style="list-style:none;">
+                    <li class="li_first_first li_first">
+                        <span style="color: #ff2a00">1
+                        </span>
+                        <p>
+                            <a href="javascript:;">正面管教(修订版)</a>
+                        </p>
+                    </li>
+                    <li class="li_two li_two_first" id="">
+                        <span class="span_two" style="color: #ff2a00">1</span>   
+                        <a class="a_two" href="javascript:;">
+                            <img class="img_two" src="../image/tuijian/27925655-1_l.jpg" alt="">
+                        </a>
+                        <p class="p_two">
+                            <a style="line-height:20px;text-decoration:none;color: #000;" href="http://product.dangdang.com/27925655.html?ref=mixpage-317715-15640_8-0">与时间赛跑的大熊
+                                <span style="display:block;line-height:20px;padding: 0;">
+                                    给孩子的时间管理绘本! 教孩子学会认识时间和钟表，建立时间观念，合理分配时间。把自主
+                                </span>
+                            </a>
+                        </p>
+                    </li>
+                    <li class="li_first" id="li_one_block">
+                        <span style="color: #ff2a00">2
+                        </span>
+                        <p>
+                            <a href="javascript:;">人间失格（日本小说家太宰治的自传体小说，李现推荐）</a>
+                        </p>
+                    </li>
+                    <li class="li_two">
+                        <span class="span_two" style="color: #ff2a00">2</span>   
+                        <a class="a_two" href="javascript:;">
+                            <img class="img_two" src="../image/tuijian/23761145-1_l.jpg" alt="">
+                        </a>
+                        <p class="p_two">
+                            <a style="line-height:20px;text-decoration:none;color: #000;" href="http://product.dangdang.com/27925655.html?ref=mixpage-317715-15640_8-0">人间失格
+                                <span style="display:block;line-height:20px;padding: 0;">超燃！“丧文化”流行，《人间失格》成了现象级畅销
+                                </span>
+                            </a>
+                        </p>
+                    </li>
+                    <li class="li_first" id="li_two_block">
+                        <span style="color: #ff2a00">3
+                        </span>
+                        <p>
+                            <a href="javascript:;">神奇校车·图画书版（全12册，新增《科学博览会》1册）</a>
+                        </p>
+                    </li>
+                    <li class="li_two" id="">
+                        <span class="span_two" style="color: #ff2a00">3</span>   
+                        <a class="a_two" href="javascript:;">
+                            <img class="img_two" src="../image/tuijian/25252408-1_l.jpg" alt="">
+                        </a>
+                        <p class="p_two">
+                            <a style="line-height:20px;text-decoration:none;color: #000;" href="http://product.dangdang.com/27925655.html?ref=mixpage-317715-15640_8-0">神奇校车·图画书版
+                                <span style="display:block;line-height:20px;padding: 0;">风靡全世界的“神奇校车”再次出发！搭乘神奇校车，
+                                </span>
+                            </a>
+                        </p>
+                    </li>
+                    <li class="li_first" id="li_three_block">
+                        <span>4
+                        </span>
+                        <p>
+                            <a href="javascript:;">丰子恺万般滋味，都是生活</a>
+                        </p>
+                    </li>
+                    <li class="li_two" id="">
+                        <span class="span_two">4</span>   
+                        <a class="a_two" href="javascript:;">
+                            <img class="img_two" src="../image/tuijian/25308985-1_l.jpg" alt="">
+                        </a>
+                        <p class="p_two">
+                            <a style="line-height:20px;text-decoration:none;color: #000;" href="http://product.dangdang.com/27925655.html?ref=mixpage-317715-15640_8-0">丰子恺万般滋味，都是生活
+                                <span style="display:block;line-height:20px;padding: 0;">丰子恺先生诞辰120周年纪念！全彩插图珍藏本，丰子恺*温暖的散文作品。献给曾是
+                                </span>
+                            </a>
+                        </p>
+                    </li>
+                    <li class="li_first" id="li_four_block">
+                        <span>5
+                        </span>
+                        <p>
+                            <a href="javascript:;">正面管教(修订版)</a>
+                        </p>
+                    </li>
+                    <li class="li_two" id="">
+                        <span class="span_two">5</span>   
+                        <a class="a_two" href="javascript:;">
+                            <img class="img_two" src="../image/tuijian/23990140-1_l.jpg" alt="">
+                        </a>
+                        <p class="p_two">
+                            <a style="line-height:20px;text-decoration:none;color: #000;" href="http://product.dangdang.com/27925655.html?ref=mixpage-317715-15640_8-0">正面管教(修订版)
+                                <span style="display:block;line-height:20px;padding: 0;">如何不惩罚、不娇纵地有效管教孩子。畅销美国400多万册，被翻译成16种语言畅销全球；让数
+                                </span>
+                            </a>
+                        </p>
+                    </li>
+                    <li class="li_first" id="li_five_block">
+                        <span>6
+                        </span>
+                        <p>
+                            <a href="javascript:;">活着（2017年新版）</a>
+                        </p>
+                    </li>
+                    <li class="li_two" id="">
+                        <span class="span_two">6</span>   
+                        <a class="a_two" href="javascript:;">
+                            <img class="img_two" src="../image/tuijian/25137790-1_l.jpg" alt="">
+                        </a>
+                        <p class="p_two">
+                            <a style="line-height:20px;text-decoration:none;color: #000;" href="http://product.dangdang.com/27925655.html?ref=mixpage-317715-15640_8-0">活着（2017年新版）
+                                <span style="display:block;line-height:20px;padding: 0;">余华是我国当代著名作家，也是享誉世界的小说家，曾荣获众多国内外奖项。《活着》是其
+                                </span>
+                            </a>
+                        </p>
+                    </li>
+                    <li class="li_first" id="li_six_block">
+                        <span>7
+                        </span>
+                        <p>
+                            <a href="javascript:;">少年读史记（套装全5册）</a>
+                        </p>
+                    </li>
+                    <li class="li_two" id="">
+                        <span class="span_two">7</span>   
+                        <a class="a_two" href="javascript:;">
+                            <img class="img_two" src="../image/tuijian/23778791-1_l.jpg" alt="">
+                        </a>
+                        <p class="p_two">
+                            <a style="line-height:20px;text-decoration:none;color: #000;" href="http://product.dangdang.com/27925655.html?ref=mixpage-317715-15640_8-0">少年读史记（套装全5册）
+                                <span style="display:block;line-height:20px;padding: 0;">精巧32开本，当当独家定制版。荣获第六届中华优秀出版物奖 ；史学、文学、哲学、
+                                </span>
+                            </a>
+                        </p>
+                    </li>
+                    <li class="li_first" id="li_seven_block">
+                        <span>8
+                        </span>
+                        <p>
+                            <a href="javascript:;">我喜欢生命本来的样子(周国平经典散文作品集)</a>
+                        </p>
+                    </li>
+                    <li class="li_two" id="">
+                        <span class="span_two">8</span>   
+                        <a class="a_two" href="javascript:;">
+                            <img class="img_two" src="../image/tuijian/24198400-1_l.jpg" alt="">
+                        </a>
+                        <p class="p_two">
+                            <a style="line-height:20px;text-decoration:none;color: #000;" href="http://product.dangdang.com/27925655.html?ref=mixpage-317715-15640_8-0">我喜欢生命本来的样子(周国平经典散文作品集)
+                                <span style="display:block;line-height:20px;padding: 0;">影响和改变万千年轻人对人生的思考和生活的态度！上市半年以
+                                </span>
+                            </a>
+                        </p>
+                    </li>
+                    <li class="li_first"
+                    id="li_eight_block">
+                        <span>9
+                        </span>
+                        <p>
+                            <a href="javascript:;">神奇校车·桥梁书版（全20册）</a>
+                        </p>
+                    </li>
+                    <li class="li_two" id="">
+                        <span class="span_two">9</span>   
+                        <a class="a_two" href="javascript:;">
+                            <img class="img_two" src="../image/tuijian/23444350-1_l.jpg" alt="">
+                        </a>
+                        <p class="p_two">
+                            <a style="line-height:20px;text-decoration:none;color: #000;" href="http://product.dangdang.com/27925655.html?ref=mixpage-317715-15640_8-0">神奇校车·桥梁书版（全20册）
+                                <span style="display:block;line-height:20px;padding: 0;">（新老版本交替发货）美国Scholastic学子出版社金牌畅销系列，继续打造神奇
+                                </span>
+                            </a>
+                        </p>
+                    </li>
+                    <li class="li_first"
+                    id="li_nine_block">
+                        <span>10
+                        </span>
+                        <p>
+                            <a href="javascript:;">红岩（七年级下册必读）</a>
+                        </p>
+                    </li>
+                    <li class="li_two" id="">
+                        <span class="span_two">10</span>  
+                        <a class="a_two" href="javascript:;">
+                            <img class="img_two" src="../image/tuijian/25167661-1_l.jpg" alt="">
+                        </a>
+                        <p class="p_two">
+                            <a style="line-height:20px;text-decoration:none;color: #000;" href="http://product.dangdang.com/27925655.html?ref=mixpage-317715-15640_8-0">红岩（七年级下册必读）
+                                <span style="display:block;line-height:20px;padding: 0;">独家授权出版！入选 “中央宣传部、教育部、共青团中央向全国青少年推荐的100种优
+                                </span>
+                            </a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="my_bang2">
+                <ul style="list-style:none;">
+                    <li class="li_first_first li_first">
+                        <span style="color: #ff2a00">1
+                        </span>
+                        <p>
+                            <a href="javascript:;">正面管教(修订版)</a>
+                        </p>
+                    </li>
+                    <li class="li_two li_two_first" id="">
+                        <span class="span_two" style="color: #ff2a00">1</span>   
+                        <a class="a_two" href="javascript:;">
+                            <img class="img_two" src="../image/tuijian/27941877-1_l.jpg" alt="">
+                        </a>
+                        <p class="p_two">
+                            <a style="line-height:20px;text-decoration:none;color: #000;" href="http://product.dangdang.com/27925655.html?ref=mixpage-317715-15640_8-0">与时间赛跑的大熊
+                                <span style="display:block;line-height:20px;padding: 0;">
+                                    给孩子的时间管理绘本! 教孩子学会认识时间和钟表，建立时间观念，合理分配时间。把自主
+                                </span>
+                            </a>
+                        </p>
+                    </li>
+                    <li class="li_first" id="li_one_block2">
+                        <span style="color: #ff2a00">2
+                        </span>
+                        <p>
+                            <a href="javascript:;">人间失格（日本小说家太宰治的自传体小说，李现推荐）</a>
+                        </p>
+                    </li>
+                    <li class="li_two">
+                        <span class="span_two" style="color: #ff2a00">2</span>   
+                        <a class="a_two" href="javascript:;">
+                            <img class="img_two" src="../image/tuijian/23761145-1_l.jpg" alt="">
+                        </a>
+                        <p class="p_two">
+                            <a style="line-height:20px;text-decoration:none;color: #000;" href="http://product.dangdang.com/27925655.html?ref=mixpage-317715-15640_8-0">人间失格
+                                <span style="display:block;line-height:20px;padding: 0;">超燃！“丧文化”流行，《人间失格》成了现象级畅销
+                                </span>
+                            </a>
+                        </p>
+                    </li>
+                    <li class="li_first" id="li_two_block">
+                        <span style="color: #ff2a00">3
+                        </span>
+                        <p>
+                            <a href="javascript:;">神奇校车·图画书版（全12册，新增《科学博览会》1册）</a>
+                        </p>
+                    </li>
+                    <li class="li_two" id="">
+                        <span class="span_two" style="color: #ff2a00">3</span>   
+                        <a class="a_two" href="javascript:;">
+                            <img class="img_two" src="../image/tuijian/25252408-1_l.jpg" alt="">
+                        </a>
+                        <p class="p_two">
+                            <a style="line-height:20px;text-decoration:none;color: #000;" href="http://product.dangdang.com/27925655.html?ref=mixpage-317715-15640_8-0">神奇校车·图画书版
+                                <span style="display:block;line-height:20px;padding: 0;">风靡全世界的“神奇校车”再次出发！搭乘神奇校车，
+                                </span>
+                            </a>
+                        </p>
+                    </li>
+                    <li class="li_first" id="li_three_block">
+                        <span>4
+                        </span>
+                        <p>
+                            <a href="javascript:;">丰子恺万般滋味，都是生活</a>
+                        </p>
+                    </li>
+                    <li class="li_two" id="">
+                        <span class="span_two">4</span>   
+                        <a class="a_two" href="javascript:;">
+                            <img class="img_two" src="../image/tuijian/25308985-1_l.jpg" alt="">
+                        </a>
+                        <p class="p_two">
+                            <a style="line-height:20px;text-decoration:none;color: #000;" href="http://product.dangdang.com/27925655.html?ref=mixpage-317715-15640_8-0">丰子恺万般滋味，都是生活
+                                <span style="display:block;line-height:20px;padding: 0;">丰子恺先生诞辰120周年纪念！全彩插图珍藏本，丰子恺*温暖的散文作品。献给曾是
+                                </span>
+                            </a>
+                        </p>
+                    </li>
+                    <li class="li_first" id="li_four_block">
+                        <span>5
+                        </span>
+                        <p>
+                            <a href="javascript:;">正面管教(修订版)</a>
+                        </p>
+                    </li>
+                    <li class="li_two" id="">
+                        <span class="span_two">5</span>   
+                        <a class="a_two" href="javascript:;">
+                            <img class="img_two" src="../image/tuijian/23990140-1_l.jpg" alt="">
+                        </a>
+                        <p class="p_two">
+                            <a style="line-height:20px;text-decoration:none;color: #000;" href="http://product.dangdang.com/27925655.html?ref=mixpage-317715-15640_8-0">正面管教(修订版)
+                                <span style="display:block;line-height:20px;padding: 0;">如何不惩罚、不娇纵地有效管教孩子。畅销美国400多万册，被翻译成16种语言畅销全球；让数
+                                </span>
+                            </a>
+                        </p>
+                    </li>
+                    <li class="li_first" id="li_five_block">
+                        <span>6
+                        </span>
+                        <p>
+                            <a href="javascript:;">活着（2017年新版）</a>
+                        </p>
+                    </li>
+                    <li class="li_two" id="">
+                        <span class="span_two">6</span>   
+                        <a class="a_two" href="javascript:;">
+                            <img class="img_two" src="../image/tuijian/25137790-1_l.jpg" alt="">
+                        </a>
+                        <p class="p_two">
+                            <a style="line-height:20px;text-decoration:none;color: #000;" href="http://product.dangdang.com/27925655.html?ref=mixpage-317715-15640_8-0">活着（2017年新版）
+                                <span style="display:block;line-height:20px;padding: 0;">余华是我国当代著名作家，也是享誉世界的小说家，曾荣获众多国内外奖项。《活着》是其
+                                </span>
+                            </a>
+                        </p>
+                    </li>
+                    <li class="li_first" id="li_six_block">
+                        <span>7
+                        </span>
+                        <p>
+                            <a href="javascript:;">少年读史记（套装全5册）</a>
+                        </p>
+                    </li>
+                    <li class="li_two" id="">
+                        <span class="span_two">7</span>   
+                        <a class="a_two" href="javascript:;">
+                            <img class="img_two" src="../image/tuijian/23778791-1_l.jpg" alt="">
+                        </a>
+                        <p class="p_two">
+                            <a style="line-height:20px;text-decoration:none;color: #000;" href="http://product.dangdang.com/27925655.html?ref=mixpage-317715-15640_8-0">少年读史记（套装全5册）
+                                <span style="display:block;line-height:20px;padding: 0;">精巧32开本，当当独家定制版。荣获第六届中华优秀出版物奖 ；史学、文学、哲学、
+                                </span>
+                            </a>
+                        </p>
+                    </li>
+                    <li class="li_first" id="li_seven_block">
+                        <span>8
+                        </span>
+                        <p>
+                            <a href="javascript:;">我喜欢生命本来的样子(周国平经典散文作品集)</a>
+                        </p>
+                    </li>
+                    <li class="li_two" id="">
+                        <span class="span_two">8</span>   
+                        <a class="a_two" href="javascript:;">
+                            <img class="img_two" src="../image/tuijian/24198400-1_l.jpg" alt="">
+                        </a>
+                        <p class="p_two">
+                            <a style="line-height:20px;text-decoration:none;color: #000;" href="http://product.dangdang.com/27925655.html?ref=mixpage-317715-15640_8-0">我喜欢生命本来的样子(周国平经典散文作品集)
+                                <span style="display:block;line-height:20px;padding: 0;">影响和改变万千年轻人对人生的思考和生活的态度！上市半年以
+                                </span>
+                            </a>
+                        </p>
+                    </li>
+                    <li class="li_first"
+                    id="li_eight_block">
+                        <span>9
+                        </span>
+                        <p>
+                            <a href="javascript:;">神奇校车·桥梁书版（全20册）</a>
+                        </p>
+                    </li>
+                    <li class="li_two" id="">
+                        <span class="span_two">9</span>   
+                        <a class="a_two" href="javascript:;">
+                            <img class="img_two" src="../image/tuijian/23444350-1_l.jpg" alt="">
+                        </a>
+                        <p class="p_two">
+                            <a style="line-height:20px;text-decoration:none;color: #000;" href="http://product.dangdang.com/27925655.html?ref=mixpage-317715-15640_8-0">神奇校车·桥梁书版（全20册）
+                                <span style="display:block;line-height:20px;padding: 0;">（新老版本交替发货）美国Scholastic学子出版社金牌畅销系列，继续打造神奇
+                                </span>
+                            </a>
+                        </p>
+                    </li>
+                    <li class="li_first"
+                    id="li_nine_block">
+                        <span>10
+                        </span>
+                        <p>
+                            <a href="javascript:;">红岩（七年级下册必读）</a>
+                        </p>
+                    </li>
+                    <li class="li_two" id="">
+                        <span class="span_two">10</span>  
+                        <a class="a_two" href="javascript:;">
+                            <img class="img_two" src="../image/tuijian/25167661-1_l.jpg" alt="">
+                        </a>
+                        <p class="p_two">
+                            <a style="line-height:20px;text-decoration:none;color: #000;" href="http://product.dangdang.com/27925655.html?ref=mixpage-317715-15640_8-0">红岩（七年级下册必读）
+                                <span style="display:block;line-height:20px;padding: 0;">独家授权出版！入选 “中央宣传部、教育部、共青团中央向全国青少年推荐的100种优
+                                </span>
+                            </a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 底部推荐头部 -->
+    <div>
+        <h3 class="my_tj_head">
+            <span>为您推荐</span>
+        </h3>
+        <div class="my_tab_c">
+            <ul id="indexreco">
+                <li class="li1">
+                    <a href="" class="pic">
+                        <img src="http://img3m5.ddimg.cn/56/4/23761145-1_h_6.jpg" alt="">
+                    </a>
+                    <p class="name">
+                        <a href="javascript:;" style="font-size:12px;">人间失格（日本小说家太宰治的自传体小说，李现推荐）</a>
+                    </p>
+                    <p class="price">
+                        <span class="price_r">
+                            ￥
+                            <span>18.80</span>
+                        </span>
+                        <span class="ebookprice_n">
+                            电子书
+                            <span class="sign">￥</span>
+                            <span class="num">4</span>
+                            <span class="tail">.99</span>
+                        </span>
+                    </p>
+                </li>
+                <li class="li2">
+                        <a href="" class="pic">
+                            <img src="http://img3m8.ddimg.cn/82/19/25252408-1_h_19.jpg" alt="">
+                        </a>
+                        <p class="name">
+                            <a href="javascript:;" style="font-size:12px;">人间失格（日本小说家太宰治的自传体小说，李现推荐）</a>
+                        </p>
+                        <p class="price">
+                            <span class="price_r">
+                                ￥
+                                <span>18.80</span>
+                            </span>
+                            <span class="ebookprice_n">
+                                电子书
+                                <span class="sign">￥</span>
+                                <span class="num">4</span>
+                                <span class="tail">.99</span>
+                            </span>
+                        </p>
+                </li>
+                <li class="li3">
+                        <a href="" class="pic">
+                            <img src="http://img3m4.ddimg.cn/32/35/23579654-1_h_3.jpg" alt="">
+                        </a>
+                        <p class="name">
+                            <a href="javascript:;" style="font-size:12px;">人间失格（日本小说家太宰治的自传体小说，李现推荐）</a>
+                        </p>
+                        <p class="price">
+                            <span class="price_r">
+                                ￥
+                                <span>18.80</span>
+                            </span>
+                            <span class="ebookprice_n">
+                                电子书
+                                <span class="sign">￥</span>
+                                <span class="num">4</span>
+                                <span class="tail">.99</span>
+                            </span>
+                        </p>
+                </li>
+                <li class="li4">
+                        <a href="" class="pic">
+                            <img src="http://img3m0.ddimg.cn/7/27/25137790-1_h_4.jpg" alt="">
+                        </a>
+                        <p class="name">
+                            <a href="javascript:;" style="font-size:12px;">人间失格（日本小说家太宰治的自传体小说，李现推荐）</a>
+                        </p>
+                        <p class="price">
+                            <span class="price_r">
+                                ￥
+                                <span>18.80</span>
+                            </span>
+                            <span class="ebookprice_n">
+                                电子书
+                                <span class="sign">￥</span>
+                                <span class="num">4</span>
+                                <span class="tail">.99</span>
+                            </span>
+                        </p>
+                </li>
+                <li class="li5">
+                        <a href="" class="pic">
+                            <img src="http://img3m4.ddimg.cn/60/23/27904794-1_h_12.jpg" alt="">
+                        </a>
+                        <p class="name">
+                            <a href="javascript:;" style="font-size:12px;">人间失格（日本小说家太宰治的自传体小说，李现推荐）</a>
+                        </p>
+                        <p class="price">
+                            <span class="price_r">
+                                ￥
+                                <span>18.80</span>
+                            </span>
+                            <span class="ebookprice_n">
+                                电子书
+                                <span class="sign">￥</span>
+                                <span class="num">4</span>
+                                <span class="tail">.99</span>
+                            </span>
+                        </p>
+                </li>
+                <li class="li6">
+                        <a href="" class="pic">
+                            <img src="http://img3m5.ddimg.cn/26/14/25238195-1_h_3.jpg" alt="">
+                        </a>
+                        <p class="name">
+                            <a href="javascript:;" style="font-size:12px;">人间失格（日本小说家太宰治的自传体小说，李现推荐）</a>
+                        </p>
+                        <p class="price">
+                            <span class="price_r">
+                                ￥
+                                <span>18.80</span>
+                            </span>
+                            <span class="ebookprice_n">
+                                电子书
+                                <span class="sign">￥</span>
+                                <span class="num">4</span>
+                                <span class="tail">.99</span>
+                            </span>
+                        </p>
+                </li>
+                <li class="li7">
+                        <a href="" class="pic">
+                            <img src="http://img3m0.ddimg.cn/64/6/23990140-1_h_7.jpg" alt="">
+                        </a>
+                        <p class="name">
+                            <a href="javascript:;" style="font-size:12px;">人间失格（日本小说家太宰治的自传体小说，李现推荐）</a>
+                        </p>
+                        <p class="price">
+                            <span class="price_r">
+                                ￥
+                                <span>18.80</span>
+                            </span>
+                            <span class="ebookprice_n">
+                                电子书
+                                <span class="sign">￥</span>
+                                <span class="num">4</span>
+                                <span class="tail">.99</span>
+                            </span>
+                        </p>
+                </li>
+                <li class="li8">
+                        <a href="" class="pic">
+                            <img src="http://img3m6.ddimg.cn/76/35/23427436-1_h_4.jpg" alt="">
+                        </a>
+                        <p class="name">
+                            <a href="javascript:;" style="font-size:12px;">人间失格（日本小说家太宰治的自传体小说，李现推荐）</a>
+                        </p>
+                        <p class="price">
+                            <span class="price_r">
+                                ￥
+                                <span>18.80</span>
+                            </span>
+                            <span class="ebookprice_n">
+                                电子书
+                                <span class="sign">￥</span>
+                                <span class="num">4</span>
+                                <span class="tail">.99</span>
+                            </span>
+                        </p>
+                </li>
+                <li class="li9">
+                        <a href="" class="pic">
+                            <img src="http://img3m1.ddimg.cn/31/4/20039611-1_h_9.jpg" alt="">
+                        </a>
+                        <p class="name">
+                            <a href="javascript:;" style="font-size:12px;">人间失格（日本小说家太宰治的自传体小说，李现推荐）</a>
+                        </p>
+                        <p class="price">
+                            <span class="price_r">
+                                ￥
+                                <span>18.80</span>
+                            </span>
+                            <span class="ebookprice_n">
+                                电子书
+                                <span class="sign">￥</span>
+                                <span class="num">4</span>
+                                <span class="tail">.99</span>
+                            </span>
+                        </p>
+                </li>
+                <li class="li10">
+                        <a href="" class="pic">
+                            <img src="http://img3m3.ddimg.cn/68/20/23271503-1_h_10.jpg" alt="">
+                        </a>
+                        <p class="name">
+                            <a href="javascript:;" style="font-size:12px;">人间失格（日本小说家太宰治的自传体小说，李现推荐）</a>
+                        </p>
+                        <p class="price">
+                            <span class="price_r">
+                                ￥
+                                <span>18.80</span>
+                            </span>
+                            <span class="ebookprice_n">
+                                电子书
+                                <span class="sign">￥</span>
+                                <span class="num">4</span>
+                                <span class="tail">.99</span>
+                            </span>
+                        </p>
+                </li>
+                <li class="li11">
+                        <a href="" class="pic">
+                            <img src="http://img3m7.ddimg.cn/52/5/23751637-1_h_34.jpg" alt="">
+                        </a>
+                        <p class="name">
+                            <a href="javascript:;" style="font-size:12px;">人间失格（日本小说家太宰治的自传体小说，李现推荐）</a>
+                        </p>
+                        <p class="price">
+                            <span class="price_r">
+                                ￥
+                                <span>18.80</span>
+                            </span>
+                            <span class="ebookprice_n">
+                                电子书
+                                <span class="sign">￥</span>
+                                <span class="num">4</span>
+                                <span class="tail">.99</span>
+                            </span>
+                        </p>
+                </li>
+                <li class="li12">
+                        <a href="" class="pic">
+                            <img src="http://img3m0.ddimg.cn/61/3/23444350-1_h_4.jpg" alt="">
+                        </a>
+                        <p class="name">
+                            <a href="javascript:;" style="font-size:12px;">人间失格（日本小说家太宰治的自传体小说，李现推荐）</a>
+                        </p>
+                        <p class="price">
+                            <span class="price_r">
+                                ￥
+                                <span>18.80</span>
+                            </span>
+                            <span class="ebookprice_n">
+                                电子书
+                                <span class="sign">￥</span>
+                                <span class="num">4</span>
+                                <span class="tail">.99</span>
+                            </span>
+                        </p>
+                </li>
+                <li class="li13">
+                    <a href="" class="pic">
+                        <img src="http://img3m5.ddimg.cn/56/4/23761145-1_h_6.jpg" alt="">
+                    </a>
+                    <p class="name">
+                        <a href="javascript:;" style="font-size:12px;">人间失格（日本小说家太宰治的自传体小说，李现推荐）</a>
+                    </p>
+                    <p class="price">
+                        <span class="price_r">
+                            ￥
+                            <span>18.80</span>
+                        </span>
+                        <span class="ebookprice_n">
+                            电子书
+                            <span class="sign">￥</span>
+                            <span class="num">4</span>
+                            <span class="tail">.99</span>
+                        </span>
+                    </p>
+                </li>
+                <li class="li14">
+                        <a href="" class="pic">
+                            <img src="http://img3m8.ddimg.cn/82/19/25252408-1_h_19.jpg" alt="">
+                        </a>
+                        <p class="name">
+                            <a href="javascript:;" style="font-size:12px;">人间失格（日本小说家太宰治的自传体小说，李现推荐）</a>
+                        </p>
+                        <p class="price">
+                            <span class="price_r">
+                                ￥
+                                <span>18.80</span>
+                            </span>
+                            <span class="ebookprice_n">
+                                电子书
+                                <span class="sign">￥</span>
+                                <span class="num">4</span>
+                                <span class="tail">.99</span>
+                            </span>
+                        </p>
+                </li>
+                <li class="li15">
+                        <a href="" class="pic">
+                            <img src="http://img3m4.ddimg.cn/32/35/23579654-1_h_3.jpg" alt="">
+                        </a>
+                        <p class="name">
+                            <a href="javascript:;" style="font-size:12px;">人间失格（日本小说家太宰治的自传体小说，李现推荐）</a>
+                        </p>
+                        <p class="price">
+                            <span class="price_r">
+                                ￥
+                                <span>18.80</span>
+                            </span>
+                            <span class="ebookprice_n">
+                                电子书
+                                <span class="sign">￥</span>
+                                <span class="num">4</span>
+                                <span class="tail">.99</span>
+                            </span>
+                        </p>
+                </li>
+                <li class="li16">
+                        <a href="" class="pic">
+                            <img src="http://img3m0.ddimg.cn/7/27/25137790-1_h_4.jpg" alt="">
+                        </a>
+                        <p class="name">
+                            <a href="javascript:;" style="font-size:12px;">人间失格（日本小说家太宰治的自传体小说，李现推荐）</a>
+                        </p>
+                        <p class="price">
+                            <span class="price_r">
+                                ￥
+                                <span>18.80</span>
+                            </span>
+                            <span class="ebookprice_n">
+                                电子书
+                                <span class="sign">￥</span>
+                                <span class="num">4</span>
+                                <span class="tail">.99</span>
+                            </span>
+                        </p>
+                </li>
+                <li class="li17">
+                        <a href="" class="pic">
+                            <img src="http://img3m4.ddimg.cn/60/23/27904794-1_h_12.jpg" alt="">
+                        </a>
+                        <p class="name">
+                            <a href="javascript:;" style="font-size:12px;">人间失格（日本小说家太宰治的自传体小说，李现推荐）</a>
+                        </p>
+                        <p class="price">
+                            <span class="price_r">
+                                ￥
+                                <span>18.80</span>
+                            </span>
+                            <span class="ebookprice_n">
+                                电子书
+                                <span class="sign">￥</span>
+                                <span class="num">4</span>
+                                <span class="tail">.99</span>
+                            </span>
+                        </p>
+                </li>
+                <li class="li18">
+                        <a href="" class="pic">
+                            <img src="http://img3m5.ddimg.cn/26/14/25238195-1_h_3.jpg" alt="">
+                        </a>
+                        <p class="name">
+                            <a href="javascript:;" style="font-size:12px;">人间失格（日本小说家太宰治的自传体小说，李现推荐）</a>
+                        </p>
+                        <p class="price">
+                            <span class="price_r">
+                                ￥
+                                <span>18.80</span>
+                            </span>
+                            <span class="ebookprice_n">
+                                电子书
+                                <span class="sign">￥</span>
+                                <span class="num">4</span>
+                                <span class="tail">.99</span>
+                            </span>
+                        </p>
+                </li>
+                <li class="li19">
+                        <a href="" class="pic">
+                            <img src="http://img3m0.ddimg.cn/64/6/23990140-1_h_7.jpg" alt="">
+                        </a>
+                        <p class="name">
+                            <a href="javascript:;" style="font-size:12px;">人间失格（日本小说家太宰治的自传体小说，李现推荐）</a>
+                        </p>
+                        <p class="price">
+                            <span class="price_r">
+                                ￥
+                                <span>18.80</span>
+                            </span>
+                            <span class="ebookprice_n">
+                                电子书
+                                <span class="sign">￥</span>
+                                <span class="num">4</span>
+                                <span class="tail">.99</span>
+                            </span>
+                        </p>
+                </li>
+                <li class="li20">
+                        <a href="" class="pic">
+                            <img src="http://img3m6.ddimg.cn/76/35/23427436-1_h_4.jpg" alt="">
+                        </a>
+                        <p class="name">
+                            <a href="javascript:;" style="font-size:12px;">人间失格（日本小说家太宰治的自传体小说，李现推荐）</a>
+                        </p>
+                        <p class="price">
+                            <span class="price_r">
+                                ￥
+                                <span>18.80</span>
+                            </span>
+                            <span class="ebookprice_n">
+                                电子书
+                                <span class="sign">￥</span>
+                                <span class="num">4</span>
+                                <span class="tail">.99</span>
+                            </span>
+                        </p>
+                </li>
+                <li class="li21">
+                        <a href="" class="pic">
+                            <img src="http://img3m1.ddimg.cn/31/4/20039611-1_h_9.jpg" alt="">
+                        </a>
+                        <p class="name">
+                            <a href="javascript:;" style="font-size:12px;">人间失格（日本小说家太宰治的自传体小说，李现推荐）</a>
+                        </p>
+                        <p class="price">
+                            <span class="price_r">
+                                ￥
+                                <span>18.80</span>
+                            </span>
+                            <span class="ebookprice_n">
+                                电子书
+                                <span class="sign">￥</span>
+                                <span class="num">4</span>
+                                <span class="tail">.99</span>
+                            </span>
+                        </p>
+                </li>
+                <li class="li22">
+                        <a href="" class="pic">
+                            <img src="http://img3m3.ddimg.cn/68/20/23271503-1_h_10.jpg" alt="">
+                        </a>
+                        <p class="name">
+                            <a href="javascript:;" style="font-size:12px;">人间失格（日本小说家太宰治的自传体小说，李现推荐）</a>
+                        </p>
+                        <p class="price">
+                            <span class="price_r">
+                                ￥
+                                <span>18.80</span>
+                            </span>
+                            <span class="ebookprice_n">
+                                电子书
+                                <span class="sign">￥</span>
+                                <span class="num">4</span>
+                                <span class="tail">.99</span>
+                            </span>
+                        </p>
+                </li>
+                <li class="li23">
+                        <a href="" class="pic">
+                            <img src="http://img3m7.ddimg.cn/52/5/23751637-1_h_34.jpg" alt="">
+                        </a>
+                        <p class="name">
+                            <a href="javascript:;" style="font-size:12px;">人间失格（日本小说家太宰治的自传体小说，李现推荐）</a>
+                        </p>
+                        <p class="price">
+                            <span class="price_r">
+                                ￥
+                                <span>18.80</span>
+                            </span>
+                            <span class="ebookprice_n">
+                                电子书
+                                <span class="sign">￥</span>
+                                <span class="num">4</span>
+                                <span class="tail">.99</span>
+                            </span>
+                        </p>
+                </li>
+                <li class="li24">
+                        <a href="" class="pic">
+                            <img src="http://img3m0.ddimg.cn/61/3/23444350-1_h_4.jpg" alt="">
+                        </a>
+                        <p class="name">
+                            <a href="javascript:;" style="font-size:12px;">人间失格（日本小说家太宰治的自传体小说，李现推荐）</a>
+                        </p>
+                        <p class="price">
+                            <span class="price_r">
+                                ￥
+                                <span>18.80</span>
+                            </span>
+                            <span class="ebookprice_n">
+                                电子书
+                                <span class="sign">￥</span>
+                                <span class="num">4</span>
+                                <span class="tail">.99</span>
+                            </span>
+                        </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+</div>
+<!-- 底部标签 -->
+<div class="db_footer">
+        <div class="footer_pic_new">
+            <div class="footer_pic_new_inner">
+                <a class="footer_pic01" href="javascript:;">
+                    <span>正规渠道正品保障</span>
+                </a>
+                <a class="footer_pic02" href="javascript:;">
+                    <span>放心购物货到付款</span>
+                </a>
+                <a class="footer_pic03" href="javascript:;">
+                    <span>150城市次日送达</span>
+                </a>
+                <a class="footer_pic04" href="javascript:;">
+                    <span>上门退换购物无忧</span>
+                </a>
+            </div>
+        </div>
+        <div></div>
+</div>
+<footer>
+    <iframe class="w-100 my_footer_h" src="footer.html" frameborder="0" scrolling="no"></iframe>
+</footer>
+<script src="js/jquery-1.11.3.js"></script>
+<!-- 秒杀活动里的切换 -->
+<script>
+    $(".my_li_hover1").hover(function(){
+        $(".my_li").css("background-image","url(../image/ms/li.png)")
+        $(".my_li2").css("background-image","url(../image/ms/li2.png)")
+        $("#dpy1").css("display","block")
+        $("#dpy2").css("display","none")
+        })
+    $(".my_li_hover2").hover(function(){
+        $(".my_li").css("background-image","url(../image/ms/li2.png)")
+        $(".my_li2").css("background-image","url(../image/ms/li.png)")
+        $("#dpy2").css("display","block")
+        $("#dpy1").css("display","none") 
+    })
+</script>
+<!--图书/电子书/网络文学  点击效果-->
+<script>
+    $("ul.tabs>li")
+    .hover(function(e){
+        if(e.target.nodeName=="A"){
+            $(e.target).css("background","#fff")
+            .parent()
+            .addClass("active")
+            .siblings()
+            .removeClass("active")
+            .children("a")
+            .css("background","#f5f5f5")
+        }
+    })
+    $("ul.tabs2>li")
+    .hover(function(e){
+        if(e.target.nodeName=="A"){
+            $(e.target).css("background","#fff")
+            .parent()
+            .addClass("active")
+            .siblings()
+            .removeClass("active")
+            .children("a")
+            .css("background","#f5f5f5")
+        }
+    })  
+</script>
+<!--推荐活动的tab鼠标移入切换-->
+<script>
+    $("ul.tabs>li")
+    .hover(function(e){
+        if(e.target.innerHTML=="最新上架"){
+            console.log(e.target.innerHTML);         
+        $(".my_tuijian1").css("display","block")
+        $(".my_tuijian2").css("display","none")
+        }else if(e.target.innerHTML=="独家畅品"){
+        $(".my_tuijian1").css("display","none")
+        $(".my_tuijian2").css("display","block")
+        }
+    })
+</script>
+<script>
+    //榜单的简写
+    // $(".my_bang1").hover(function(e){
+    //     if(e.target.nodeName=="LI"){
+    //         $(e.target).nextAll(".li_two").hide()
+    //         $(e.target).prevAll(".li_two").hide()
+    //         $(e.target).next().show()
+    //     }
+    // })
+    $("#li_one_block").hover(function(){
+        $("#li_one_block").hide()
+        .next().show().next().show()
+        .nextAll(".li_two").hide()
+        $("#li_one_block").nextAll(".li_first").show()
+        $("#li_one_block").prevAll(".li_two").hide()
+        .prevAll().show()
+    })
+    $("#li_one_block2").hover(function(){
+        $("#li_one_block2").css("display","none")
+        .next().css("display","block")
+        .next().css("display","block")
+        .next().css("display","none")
+        $("#li_one_block2").prev().css("display","none")
+        .prev().css("display","block")
+    })
+    $("#li_two_block").hover(function(){
+        $("#li_two_block").hide()
+        .next().show().next().show()
+        .nextAll(".li_two").hide()
+        $("#li_two_block").nextAll(".li_first").show()
+        $("#li_two_block").prevAll(".li_two").hide()
+        .prev().show()
+    })
+    $("#li_three_block").hover(function(){
+        $("#li_three_block").hide()
+        .next().show().next().show()
+        .nextAll(".li_two").hide()
+        $("#li_three_block").nextAll(".li_first").show()
+        $("#li_three_block").prevAll(".li_two").hide()
+        .prev().show()
+    })
+    $("#li_four_block").hover(function(){
+        $("#li_four_block").hide()
+        .next().show().next().show()
+        .nextAll(".li_two").hide()
+        $("#li_four_block").nextAll(".li_first").show()
+        $("#li_four_block").prevAll(".li_two").hide()
+        .prev().show()
+    })
+    $("#li_five_block").hover(function(){
+        $("#li_five_block").hide()
+        .next().show().next().show()
+        .nextAll(".li_two").hide()
+        $("#li_five_block").nextAll(".li_first").show()
+        $("#li_five_block").prevAll(".li_two").hide()
+        .prev().show()
+    })
+    $("#li_six_block").hover(function(){
+        $("#li_six_block").hide()
+        .next().show().next().show()
+        .nextAll(".li_two").hide()
+        $("#li_six_block").nextAll(".li_first").show()
+        $("#li_six_block").prevAll(".li_two").hide()
+        .prev().show()
+    })
+    $("#li_seven_block").hover(function(){
+        $("#li_seven_block").hide()
+        .next().show().next().show()
+        .nextAll(".li_two").hide()
+        $("#li_seven_block").nextAll(".li_first").show()
+        $("#li_seven_block").prevAll(".li_two").hide()
+        .prev().show()
+    })
+    $("#li_eight_block").hover(function(){
+        $("#li_eight_block").hide()
+        .next().show().next().show()
+        .nextAll(".li_two").hide()
+        $("#li_eight_block").nextAll(".li_first").show()
+        $("#li_eight_block").prevAll(".li_two").hide()
+        .prev().show()
+    })
+    $("#li_nine_block").hover(function(){
+        $("#li_nine_block").hide()
+        .next().show().next().show()
+        .nextAll(".li_two").hide()
+        $("#li_nine_block").nextAll(".li_first").show()
+        $("#li_nine_block").prevAll(".li_two").hide()
+        .prev().show()
+    })
+    $(".li_first_first").hover(function(){
+        $(".li_first_first").hide()
+        .next().show().next().show()
+        .nextAll(".li_two").hide()
+        $(".li_first_first").nextAll(".li_first").show()
+        $(".li_first_first").prevAll(".li_two").hide()
+        .prev().show()
+    })  
+    $("#bang1").hover(function(){
+        $(".my_bang1").css("display","block")
+        $(".my_bang2").css("display","none")
+    })
+    $("#bang2").hover(function(){
+        $(".my_bang2").css("display","block")
+        $(".my_bang1").css("display","none")
+    })
+</script>
+</body>
+</html>

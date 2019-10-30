@@ -1,0 +1,19 @@
+#设置编码
+SET NAMES UTF8;
+#丢弃dd，如果存在
+DROP DATABASE IF EXISTS dd;
+#创建数据库加编码模式
+CREATE DATABASE dd CHARSET=UTF8;
+#进入数据库
+USE dd;
+#创建数据表
+CREATE TABLE user(
+  uid INT PRIMARY KEY AUTO_INCREMENT,
+  phone varchar(16),
+  user_name varchar(32),
+  email varchar(30),
+  uname varchar(20),
+  upwd varchar(20),
+  gender smallint
+);
+INSERT INTO user VALUES(null,17864562545,'兜兜','123456@163.com','doudou','123456',0);

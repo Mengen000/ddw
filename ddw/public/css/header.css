@@ -1,0 +1,114 @@
+*{margin: 0px;padding: 0px;box-sizing:border-box;}
+.my_height{
+    width: 100%;
+}
+.my_height1{
+    width:1200px;height:34px;
+}
+.my_height2{
+    width: 1200px;height:100px;
+}
+.size12{
+    font-size: 12px; line-height:34px;
+}
+.index{
+    z-index: 50;
+}
+.logheight{
+    height: 20px;
+    background-repeat: no-repeat;
+}
+.logn_line{
+    height: 100px;
+}
+.my_border{
+    border:2px solid #ff2a00;
+    border-right:5px;
+    width: 410px;
+    height: 40px;
+    padding: 9px 0px 9px 10px;
+}
+.select{
+    border:2px solid #ff2a00;
+    border-left:0;
+    font-size: 16px;
+    color: #e2e3e5;
+    width:108px;
+    height:40px;
+    text-decoration: none;
+    display:inline-block;
+    text-align: center;
+    line-height: 40px;
+    margin-left:-5px;
+    left: 410px;
+    top:0px;
+}
+.my_btn{
+    border:2px solid #ff2a00;
+    background: #ff2a00;
+    width: 48px;
+    height: 40px;
+    left: 512px;
+    top: 0;
+    background-image: url(../../image/search.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.rem{
+    width:560px;
+    height: 20px;
+}
+.rem a,.rem span{
+    font-size: 12px;
+    left: 362px;
+    top: 65px;
+}
+.my_height3{
+    width: 86px;
+    height: 36px;
+    top: 30px;
+    right: 0px;
+    border: 2px solid #e2e3e5;
+    line-height: 36px;
+    border-left:0;
+}
+.rem>a{
+    text-decoration: none;
+}
+.rem>div>a{
+    text-decoration: none;
+}
+.my_height3 a{
+    font-size:14px;
+    text-decoration: none;
+}
+.my_height4{
+    width:107px;
+    height: 36px;
+    background: #ff2a00;
+    line-height: 36px;
+    top: 30px;
+    right: 86px;
+    background-image: url(../../image/shopping2.png);
+    background-repeat: no-repeat;
+    background-size:25%;
+    background-position: 8% center;
+    padding-left: 35px;
+    border: 2px solid #ff2a00;
+}
+.my_height4 a{
+    color: #fff;
+}
+.my_height4:hover{
+    background:#e2e3e5;
+    background-image: url(../../image/shopping3.png);
+    background-repeat: no-repeat;
+    background-size:25%;
+    background-position: 8% center;
+    border: 2px solid #999999;
+}
+.my_height4:hover>a{
+    color: #ff2a00;
+    text-decoration: none;
+}
+ul{list-style: none;}

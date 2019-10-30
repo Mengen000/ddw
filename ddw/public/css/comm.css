@@ -1,0 +1,8 @@
+@media screen and (min-width: 992px){
+    .my_header_h{height: 11rem;}
+    .my_footer_h{height: 27rem;}
+}
+@media screen and (max-width:991px){
+    .my_header_h{height: 11rem;}
+    .my_footer_h{height: 41rem;}
+}
